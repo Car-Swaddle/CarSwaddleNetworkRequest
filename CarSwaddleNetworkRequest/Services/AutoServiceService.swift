@@ -6,7 +6,7 @@
 //  Copyright © 2018 CarSwaddle. All rights reserved.
 //
 
-import NetworkRequest
+import Foundation
 
 extension NetworkRequest.Request.Endpoint {
     fileprivate static let services = Request.Endpoint(rawValue: "/hello")
