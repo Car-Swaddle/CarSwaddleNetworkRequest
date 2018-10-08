@@ -1,18 +1,9 @@
 {
-  "Mac" : [
-
-  ],
-  "watchOS" : [
-
-  ],
-  "tvOS" : [
-
-  ],
   "commitish" : "1.01",
   "iOS" : [
     {
       "name" : "NetworkRequest",
-      "hash" : "7e5e70e61e34fc708af920db5d6346016d729d78297f895d238a32f62ff74f6f"
+      "hash" : "9dc8525893496a598c481759338f44bf35cd62983100d9482d731690d38ed5ea"
     }
   ]
 }

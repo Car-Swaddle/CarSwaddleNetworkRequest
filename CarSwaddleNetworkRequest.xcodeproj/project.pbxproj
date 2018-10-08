@@ -11,13 +11,14 @@
 		992C53CC2150C59B0076949C /* CarSwaddleNetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992C53CB2150C59B0076949C /* CarSwaddleNetworkRequestTests.swift */; };
 		992C53CE2150C59B0076949C /* CarSwaddleNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 992C53C02150C59B0076949C /* CarSwaddleNetworkRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		992C53D82150C5B10076949C /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992C53D72150C5B10076949C /* ServerRequest.swift */; };
-		9955BC052154E01B008DAF8E /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9955BC042154E01B008DAF8E /* Authentication.framework */; };
 		9955BC182154E646008DAF8E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9955BC172154E646008DAF8E /* UserService.swift */; };
 		995B9F2B2154B4DB0030A7CA /* GlobalImports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B9F2A2154B4DB0030A7CA /* GlobalImports.swift */; };
 		995B9F2D2154BB180030A7CA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B9F2C2154BB180030A7CA /* AuthService.swift */; };
 		995B9F2F2154C9050030A7CA /* NetworkRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B9F2E2154C9050030A7CA /* NetworkRequestError.swift */; };
 		99C791C72150CBA4000167CB /* AutoServiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C791C62150CBA4000167CB /* AutoServiceService.swift */; };
 		99C8DD81216ACD5400627E8A /* NetworkRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C8DD80216ACD5400627E8A /* NetworkRequest.framework */; };
+		99F36C5E216AD5B300CE4564 /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C8DD86216AD59C00627E8A /* Authentication.framework */; };
+		99F36C5F216AD5B300CE4564 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C8DD87216AD59C00627E8A /* KeychainAccess.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,14 +39,14 @@
 		992C53CB2150C59B0076949C /* CarSwaddleNetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSwaddleNetworkRequestTests.swift; sourceTree = "<group>"; };
 		992C53CD2150C59B0076949C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		992C53D72150C5B10076949C /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
-		9955BC042154E01B008DAF8E /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9955BC172154E646008DAF8E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		995B9F2A2154B4DB0030A7CA /* GlobalImports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImports.swift; sourceTree = "<group>"; };
 		995B9F2C2154BB180030A7CA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		995B9F2E2154C9050030A7CA /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
-		99C791BB2150C5E5000167CB /* NetworkRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C791C62150CBA4000167CB /* AutoServiceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceService.swift; sourceTree = "<group>"; };
 		99C8DD80216ACD5400627E8A /* NetworkRequest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkRequest.framework; path = Carthage/Build/iOS/NetworkRequest.framework; sourceTree = "<group>"; };
+		99C8DD86216AD59C00627E8A /* Authentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Authentication.framework; path = Carthage/Build/iOS/Authentication.framework; sourceTree = "<group>"; };
+		99C8DD87216AD59C00627E8A /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9955BC052154E01B008DAF8E /* Authentication.framework in Frameworks */,
 				99C8DD81216ACD5400627E8A /* NetworkRequest.framework in Frameworks */,
+				99F36C5E216AD5B300CE4564 /* Authentication.framework in Frameworks */,
+				99F36C5F216AD5B300CE4564 /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,9 +115,9 @@
 		99C791BA2150C5E5000167CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99C8DD86216AD59C00627E8A /* Authentication.framework */,
+				99C8DD87216AD59C00627E8A /* KeychainAccess.framework */,
 				99C8DD80216ACD5400627E8A /* NetworkRequest.framework */,
-				9955BC042154E01B008DAF8E /* Authentication.framework */,
-				99C791BB2150C5E5000167CB /* NetworkRequest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,6 +247,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/NetworkRequest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Authentication.framework",
 			);
 			outputFileListPaths = (
 			);
