@@ -21,7 +21,7 @@ public let serverRequest: Request = {
 //    request.port = 3000
     request.port = 8246
     request.timeout = 15
-    request.defaultScheme = .http
+    request.defaultScheme = .ws
     return request
 }()
 
