@@ -20,6 +20,8 @@ class LoginTests: XCTestCase {
         
         authService.login(email: "k@k.com", password: password) { json, token, error in
             XCTAssert(token != nil, "Should have logged in")
+            XCTAssert(json?["mechanic"] == nil, "Should not have mechanic")
+            XCTAssert(json?["user"] != nil, "Should have user")
             exp.fulfill()
         }
         
@@ -54,6 +56,21 @@ class LoginTests: XCTestCase {
         let newEmail = UUID().uuidString
         authService.signUp(email: newEmail + "@k.com", password: password) { json, token, error in
             XCTAssert(token != nil, "Should have logged in")
+            XCTAssert(json?["mechanic"] == nil, "Should have mechanic")
+            XCTAssert(json?["user"] != nil, "Should have user")
+            exp.fulfill()
+        }
+        
+        waitForExpectations(timeout: 40, handler: nil)
+    }
+    
+    func testSignUpExistingEmailFails() {
+        let exp = expectation(description: "\(#function)\(#line)")
+        
+        authService.signUp(email: "k@k.com", password: password) { json, token, error in
+            XCTAssert(token == nil, "Should have not logged in")
+            XCTAssert(json?["mechanic"] == nil, "Should have mechanic")
+            XCTAssert(json?["user"] == nil, "Should have user")
             exp.fulfill()
         }
         
@@ -65,6 +82,8 @@ class LoginTests: XCTestCase {
         
         authService.mechanicLogin(email: "k@k.com", password: password) { json, token, error in
             XCTAssert(token != nil, "Should have logged in")
+            XCTAssert(json?["mechanic"] != nil, "Should have mechanic")
+            XCTAssert(json?["user"] != nil, "Should have user")
             exp.fulfill()
         }
         
@@ -99,6 +118,8 @@ class LoginTests: XCTestCase {
         let newEmail = UUID().uuidString
         authService.mechanicSignUp(email: newEmail + "@k.com", password: password) { json, token, error in
             XCTAssert(token != nil, "Should have logged in")
+            XCTAssert(json?["mechanic"] != nil, "Should have mechanic")
+            XCTAssert(json?["user"] != nil, "Should have user")
             exp.fulfill()
         }
         
