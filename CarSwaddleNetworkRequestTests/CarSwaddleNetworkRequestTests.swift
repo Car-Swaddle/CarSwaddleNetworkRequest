@@ -10,18 +10,43 @@ import XCTest
 @testable import CarSwaddleNetworkRequest
 
 class CarSwaddleNetworkRequestTests: XCTestCase {
+    
+    private let availabilityService = AvailabilityService()
+    private let authService = AuthService()
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        guard authentication.token == nil else { return }
+        
+        let exp = expectation(description: "\(#function)\(#line)")
+        
+        // Issue an async request
+//        let data = getData()
+//        db.overwriteDatabase(data) {
+        authService.mechanicLogin(email: "k@k.com", password: "password") { json, token, error in
+            if let token = token {
+                authentication.setToken(token)
+            }
+            exp.fulfill()
+        }
+        
+        // Wait for the async request to complete
+        waitForExpectations(timeout: 40, handler: nil)
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testAvailability() {
+        let exp = expectation(description: "\(#function)\(#line)")
+        
+        availabilityService.postAvailability(json: availabilityJSON) { json, error in
+            print("json: \(String(describing: json))")
+            exp.fulfill()
+        }
+        
+        waitForExpectations(timeout: 40, handler: nil)
     }
 
     func testPerformanceExample() {
@@ -32,3 +57,8 @@ class CarSwaddleNetworkRequestTests: XCTestCase {
     }
 
 }
+
+
+private let availabilityJSON: JSONObject = [
+    :
+]
