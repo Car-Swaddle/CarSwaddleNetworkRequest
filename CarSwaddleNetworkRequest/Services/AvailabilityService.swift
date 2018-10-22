@@ -14,15 +14,22 @@ extension NetworkRequest.Request.Endpoint {
 //    fileprivate static let currentUser = Request.Endpoint(rawValue: "/api/current-user")
 }
 
+
 final class AvailabilityService: Service {
     
     @discardableResult
-    public func postAvailability(json: JSONObject, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
-        var urlRequest = serverRequest.get(with: .availability)
-        try? urlRequest?.authenticate()
+    public func postAvailability(jsonArray: [JSONObject], completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
+        let json: JSONObject = ["spans": jsonArray]
+        guard let body = (try? JSONSerialization.data(withJSONObject: json, options: [])) else { return nil }
+        var urlRequest = serverRequest.post(with: .availability, body: body, contentType: .applicationJSON)
+        do {
+            try urlRequest?.authenticate()
+        } catch {
+            print("couldn't authenticate")
+        }
         return urlRequest?.send { data, error in
             guard let data = data,
-                let json = (try? JSONSerialization.jsonObject(with: data, options: [])) as? JSONObject else {
+                let json = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {
                     completion(nil, error)
                     return
             }
