@@ -15,7 +15,7 @@ extension NetworkRequest.Request.Endpoint {
 }
 
 
-final class AvailabilityService: Service {
+final public class AvailabilityService: Service {
     
     @discardableResult
     public func postAvailability(jsonArray: [JSONObject], completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
