@@ -24,9 +24,23 @@ final class AvailabilityService: Service {
         var urlRequest = serverRequest.post(with: .availability, body: body, contentType: .applicationJSON)
         do {
             try urlRequest?.authenticate()
-        } catch {
-            print("couldn't authenticate")
+        } catch { print("couldn't authenticate") }
+        return urlRequest?.send { data, error in
+            guard let data = data,
+                let json = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {
+                    completion(nil, error)
+                    return
+            }
+            completion(json, nil)
         }
+    }
+    
+    @discardableResult
+    public func getAvailability(completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
+        var urlRequest = serverRequest.get(with: .availability)
+        do {
+            try urlRequest?.authenticate()
+        } catch { print("couldn't authenticate") }
         return urlRequest?.send { data, error in
             guard let data = data,
                 let json = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {

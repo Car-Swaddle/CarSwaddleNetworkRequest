@@ -28,8 +28,8 @@ class AvailabilityTests: CarSwaddleLoginTestCase {
         templatesJSON = json
     }
     
-    private var weekDays: [Int] = [0] // [0,1,2,3,4,5,6]
-    private var hourOfDay: [Int] = [9, 10] // [9,10,11,12,13,14,15,16,17,18]
+    private var weekDays: [Int] = [0,1,2,3,4,5,6]
+    private var hourOfDay: [Int] = [9,10,11,12,13,14,15,16,17,18]
     
     private func createTemplates() -> [Template] {
         var templates: [Template] = []
@@ -47,11 +47,23 @@ class AvailabilityTests: CarSwaddleLoginTestCase {
         updateTemplates()
     }
     
-    func testAvailability() {
+    func testPostAvailability() {
         let exp = expectation(description: "\(#function)\(#line)")
         
+        let templateCount = templatesJSON.count
         availabilityService.postAvailability(jsonArray: templatesJSON) { json, error in
-            print("json: \(String(describing: json))")
+            XCTAssert(json != nil, "Should have gotten json")
+            XCTAssert(json?.count == templateCount, "Should have gotten \(templateCount) templates")
+            exp.fulfill()
+        }
+        
+        waitForExpectations(timeout: 40, handler: nil)
+    }
+    
+    func testGetAvailability() {
+        let exp = expectation(description: "\(#function)\(#line)")
+        
+        availabilityService.getAvailability { json, error in
             XCTAssert(json != nil, "Should have gotten json")
             exp.fulfill()
         }
