@@ -21,11 +21,18 @@ class CarSwaddleLoginTestCase: XCTestCase {
         guard authentication.token == nil else { return }
         
         let exp = expectation(description: "\(#function)\(#line)")
-        authService.mechanicLogin(email: "k@k.com", password: "password") { json, token, error in
+        authService.mechanicLogin(email: "k@k.com", password: "password") { [weak self] json, token, error in
             if let token = token {
                 authentication.setToken(token)
+                exp.fulfill()
+            } else {
+                self?.authService.mechanicSignUp(email: "k@k.com", password: "password") { json, token, error in
+                    if let token = token {
+                        authentication.setToken(token)
+                    }
+                    exp.fulfill()
+                }
             }
-            exp.fulfill()
         }
         
         waitForExpectations(timeout: 40, handler: nil)
