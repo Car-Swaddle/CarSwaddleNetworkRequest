@@ -19,7 +19,7 @@ final public class RegionService: Service {
     public func postRegion(latitude: Double, longitude: Double, radius: Double, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
         let json: JSONObject = ["latitude": latitude, "longitude": longitude, "radius": radius]
         guard let body = (try? JSONSerialization.data(withJSONObject: json, options: [])) else { return nil }
-        guard var urlRequest = serverRequest.post(with: .region, body: body, contentType: .applicationJSON) else { return nil }
+        guard var urlRequest = serviceRequest.post(with: .region, body: body, contentType: .applicationJSON) else { return nil }
         do {
             try urlRequest.authenticate()
         } catch { print("couldn't authenticate") }
