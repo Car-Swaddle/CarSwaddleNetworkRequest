@@ -69,7 +69,7 @@ public class UserService: Service {
     @discardableResult
     public func updateCurrentUser(json: JSONObject, completion: @escaping (_ json: JSONObject?, _ error: Error?) -> Void) -> URLSessionDataTask? {
         guard let body = (try? JSONSerialization.data(withJSONObject: json, options: [])) else { return nil }
-        guard var urlRequest = serviceRequest.patch(with: .updateUser, body: body) else { return nil }
+        guard var urlRequest = serviceRequest.patch(with: .updateUser, body: body, contentType: .applicationJSON) else { return nil }
         
         try? urlRequest.authenticate()
         
