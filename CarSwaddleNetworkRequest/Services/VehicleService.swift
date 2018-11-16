@@ -13,6 +13,11 @@ extension NetworkRequest.Request.Endpoint {
     fileprivate static let vehicles = Request.Endpoint(rawValue: "/api/vehicles")
 }
 
+struct VehicleServiceError: Error {
+    let rawValue: String
+    static let nothingDeletedError = VehicleServiceError(rawValue: "nothigDeletedError")
+}
+
 final public class VehicleService: Service {
     
     @discardableResult
@@ -106,11 +111,16 @@ final public class VehicleService: Service {
         do { try urlRequest.authenticate() } catch { print("couldn't authenticate") }
         return serviceRequest.send(urlRequest: urlRequest) { data, error in
             guard let data = data,
-                let value = String(data: data, encoding: .utf8) else {
+                let value = String(data: data, encoding: .utf8),
+                let numberOfDeletedVehicles = Int(value) else {
                     completion(error)
                     return
             }
-            completion(nil)
+            if numberOfDeletedVehicles == 1 {
+                completion(nil)
+            } else {
+                completion(VehicleServiceError.nothingDeletedError)
+            }
         }
     }
     

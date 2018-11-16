@@ -71,7 +71,7 @@ class VehicleTests: CarSwaddleLoginTestCase {
     func testDeleteNonexistant() {
         let exp = expectation(description: "\(#function)\(#line)")
         self.vehicleService.deleteVehicle(vehicleID: "") { error in
-            XCTAssert(error != nil, "Should have json")
+            XCTAssert(error != nil, "Should have error")
             exp.fulfill()
         }
         waitForExpectations(timeout: 40, handler: nil)
