@@ -14,7 +14,7 @@ extension NetworkRequest.Request.Endpoint {
 }
 
 
-final class PriceService: Service {
+final public class PriceService: Service {
     
     @discardableResult
     public func getPrice(mechanicID: String, oilType: String, location: CLLocationCoordinate2D, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
