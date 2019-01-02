@@ -17,13 +17,13 @@ extension NetworkRequest.Request.Endpoint {
 final public class ReviewService: Service {
     
     @discardableResult
-    public func getReviewsByCurrentUser(completion: @escaping JSONCompletion) -> URLSessionDataTask? {
-        return getReviews(queryItems: [:], completion: completion)
+    public func getReviewsByCurrentUser(limit: Int = 100, offset: Int = 0, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
+        return getReviews(queryItems: ["limit": limit, "offset": offset], completion: completion)
     }
     
     @discardableResult
-    public func getReviews(forMechanicWithID mechanicID: String, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
-        return getReviews(queryItems: ["mechanic": mechanicID], completion: completion)
+    public func getReviews(forMechanicWithID mechanicID: String, limit: Int = 100, offset: Int = 0, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
+        return getReviews(queryItems: ["mechanic": mechanicID, "limit": limit, "offset": offset], completion: completion)
     }
     
     @discardableResult
