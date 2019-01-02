@@ -140,7 +140,7 @@ class MechanicServiceTests: CarSwaddleLoginTestCase {
     func testUpdateMechanicSocialSecurityLast4() {
         let exp = expectation(description: "\(#function)\(#line)")
         
-        service.updateCurrentMechanic(isActive: nil, token: nil, dateOfBirth: nil, addressJSON: nil, externalAccount: nil, socialSecurityNumberLast4: "1234", personalIDNumber: nil) { json, error in
+        service.updateCurrentMechanic(isActive: nil, token: nil, dateOfBirth: nil, addressJSON: nil, externalAccount: nil, socialSecurityNumberLast4: "0000", personalIDNumber: nil) { json, error in
             self.stripeService.getVerification { json, error in
                 guard let json = json,
                     let fieldsNeeded = json["fields_needed"] as? [String] else {
@@ -159,7 +159,7 @@ class MechanicServiceTests: CarSwaddleLoginTestCase {
     func testUpdateMechanicSocialSecurityNumber() {
         let exp = expectation(description: "\(#function)\(#line)")
         
-        service.updateCurrentMechanic(isActive: nil, token: nil, dateOfBirth: nil, addressJSON: nil, externalAccount: nil, socialSecurityNumberLast4: nil, personalIDNumber: "123-45-6789") { json, error in
+        service.updateCurrentMechanic(isActive: nil, token: nil, dateOfBirth: nil, addressJSON: nil, externalAccount: nil, socialSecurityNumberLast4: nil, personalIDNumber: "000-00-0000") { json, error in
             self.stripeService.getVerification { json, error in
                 guard let json = json,
                     let fieldsNeeded = json["fields_needed"] as? [String] else {
