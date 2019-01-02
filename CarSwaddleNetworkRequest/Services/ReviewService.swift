@@ -10,7 +10,7 @@ import Foundation
 
 extension NetworkRequest.Request.Endpoint {
     fileprivate static let reviews = Request.Endpoint(rawValue: "/api/reviews")
-    fileprivate static let ratingsReceived = Request.Endpoint(rawValue: "/api/ratings-received")
+    fileprivate static let ratingsReceived = Request.Endpoint(rawValue: "/api/average-rating-received")
 }
 
 
@@ -35,22 +35,22 @@ final public class ReviewService: Service {
     }
     
     @discardableResult
-    public func getRatingsReceivedForCurrentUser(completion: @escaping JSONCompletion) -> URLSessionDataTask? {
-        return getRatingsReceived(queryItems: [:], completion: completion)
+    public func getAverageRatingForCurrentUser(completion: @escaping JSONCompletion) -> URLSessionDataTask? {
+        return getAverageRating(queryItems: [:], completion: completion)
     }
     
     @discardableResult
-    public func getRatingsReceived(userID: String, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
-        return getRatingsReceived(queryItems: ["user": userID], completion: completion)
+    public func getAverageRating(userID: String, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
+        return getAverageRating(queryItems: ["user": userID], completion: completion)
     }
     
     @discardableResult
-    public func getRatingsReceived(mechanicID: String, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
-        return getRatingsReceived(queryItems: ["mechanic": mechanicID], completion: completion)
+    public func getAverageRating(mechanicID: String, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
+        return getAverageRating(queryItems: ["mechanic": mechanicID], completion: completion)
     }
     
     @discardableResult
-    private func getRatingsReceived(queryItems: QueryItems, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
+    private func getAverageRating(queryItems: QueryItems, completion: @escaping JSONCompletion) -> URLSessionDataTask? {
         guard let urlRequest = serviceRequest.get(with: .ratingsReceived, queryItems: queryItems.urlQueryItems) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { [weak self] data, error in
             self?.completeWithJSON(data: data, error: error, completion: completion)

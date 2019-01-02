@@ -39,7 +39,7 @@ class ReviewServiceTests: CarSwaddleLoginTestCase {
     func testGetRatingsReceived() {
         let exp = expectation(description: "\(#function)\(#line)")
         
-        reviewService.getRatingsReceivedForCurrentUser { json, error in
+        reviewService.getAverageRatingForCurrentUser { json, error in
             XCTAssert(json?["rating"] as? CGFloat != nil, "Should have rating")
             exp.fulfill()
         }
@@ -50,7 +50,7 @@ class ReviewServiceTests: CarSwaddleLoginTestCase {
     func testGetRatingsForMechanic() {
         let exp = expectation(description: "\(#function)\(#line)")
         
-        reviewService.getRatingsReceived(mechanicID: "ce8b0070-0e41-11e9-834e-458588e04d18") { json, error in
+        reviewService.getAverageRating(mechanicID: "ce8b0070-0e41-11e9-834e-458588e04d18") { json, error in
             XCTAssert(json?["rating"] as? CGFloat != nil, "Should have rating")
             exp.fulfill()
         }
@@ -61,7 +61,7 @@ class ReviewServiceTests: CarSwaddleLoginTestCase {
     func testGetRatingsForEmptyMechanic() {
         let exp = expectation(description: "\(#function)\(#line)")
         
-        reviewService.getRatingsReceived(mechanicID: "") { json, error in
+        reviewService.getAverageRating(mechanicID: "") { json, error in
             XCTAssert(json?["rating"] != nil, "Should have rating")
             exp.fulfill()
         }
@@ -72,7 +72,7 @@ class ReviewServiceTests: CarSwaddleLoginTestCase {
     func testGetRatingsForUser() {
         let exp = expectation(description: "\(#function)\(#line)")
         
-        reviewService.getRatingsReceived(userID: "00e80f70-0e58-11e9-97e3-23156c356f56") { json, error in
+        reviewService.getAverageRating(userID: "00e80f70-0e58-11e9-97e3-23156c356f56") { json, error in
             XCTAssert(json?["rating"] != nil, "Should have rating")
             exp.fulfill()
         }
