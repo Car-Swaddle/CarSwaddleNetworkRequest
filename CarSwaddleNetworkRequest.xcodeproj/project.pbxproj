@@ -33,6 +33,7 @@
 		998D3AD521DC86E9003DD717 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998D3AD421DC86E9003DD717 /* ReviewService.swift */; };
 		998D3AD721DC8CDE003DD717 /* ReviewServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998D3AD621DC8CDE003DD717 /* ReviewServiceTests.swift */; };
 		99C791C72150CBA4000167CB /* AutoServiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C791C62150CBA4000167CB /* AutoServiceService.swift */; };
+		99E66D2B21E0915400C6E3E1 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66D2A21E0915400C6E3E1 /* FileService.swift */; };
 		99F02697217B9FB8005FEFC7 /* AvailabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F02696217B9FB8005FEFC7 /* AvailabilityService.swift */; };
 		99F02699217BA048005FEFC7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F02698217BA048005FEFC7 /* Service.swift */; };
 		99F0269B217BA1F5005FEFC7 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0269A217BA1F5005FEFC7 /* TypeAliases.swift */; };
@@ -109,6 +110,7 @@
 		998D3AD621DC8CDE003DD717 /* ReviewServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewServiceTests.swift; sourceTree = "<group>"; };
 		99C791C62150CBA4000167CB /* AutoServiceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceService.swift; sourceTree = "<group>"; };
 		99C8DD87216AD59C00627E8A /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		99E66D2A21E0915400C6E3E1 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		99F02696217B9FB8005FEFC7 /* AvailabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityService.swift; sourceTree = "<group>"; };
 		99F02698217BA048005FEFC7 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		99F0269A217BA1F5005FEFC7 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				997DBC79219D70540080F42C /* VehicleService.swift */,
 				997714B821CA1D5C00E54F5B /* PriceService.swift */,
 				997714C821CE36A400E54F5B /* StripeService.swift */,
+				99E66D2A21E0915400C6E3E1 /* FileService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				99F0269D217BAA18005FEFC7 /* BoolExtension.swift in Sources */,
 				99F02699217BA048005FEFC7 /* Service.swift in Sources */,
 				997714C921CE36A400E54F5B /* StripeService.swift in Sources */,
+				99E66D2B21E0915400C6E3E1 /* FileService.swift in Sources */,
 				995B9F2B2154B4DB0030A7CA /* GlobalImports.swift in Sources */,
 				997DBC45219408260080F42C /* MechanicService.swift in Sources */,
 				99F0269B217BA1F5005FEFC7 /* TypeAliases.swift in Sources */,
