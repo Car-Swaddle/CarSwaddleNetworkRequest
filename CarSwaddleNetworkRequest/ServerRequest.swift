@@ -115,8 +115,8 @@ extension Request {
         return task
     }
     
-    func uploadMultipartFormData(urlRequest: NSMutableURLRequest, fileURL: URL, completion: @escaping (_ data: Data?, _ response: HTTPURLResponse?, _ error: Error?) -> Void) -> URLSessionDataTask? {
-        let task = self.uploadMultipartFormDataTask(with: urlRequest, url: fileURL, completion: completion)
+    func uploadMultipartFormData(urlRequest: NSMutableURLRequest, fileURL: URL, contentType: String, completion: @escaping (_ data: Data?, _ response: HTTPURLResponse?, _ error: Error?) -> Void) -> URLSessionDataTask? {
+        let task = self.uploadMultipartFormDataTask(with: urlRequest, fileURL: fileURL, contentType: contentType, completion: completion)
         task?.resume()
         return task
     }
