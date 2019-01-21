@@ -1,9 +1,9 @@
 {
-  "commitish" : "1.069",
+  "commitish" : "1.070",
   "iOS" : [
     {
       "name" : "NetworkRequest",
-      "hash" : "fee3f17c48ad548cbd3761cbf8836d5eb94b27754afe3d3b4a901b0d4a27b27a"
+      "hash" : "0894f0d059b7bea6c05f045df1c41ea210c44dbd9eb77b0b53b1bab4d26bee20"
     }
   ]
 }
