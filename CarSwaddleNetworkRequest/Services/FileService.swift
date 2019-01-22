@@ -28,7 +28,7 @@ final public class FileService: Service {
     
     @discardableResult
     public func getProfileImage(userID: String, completion: @escaping (_ fileURL: URL?, _ error: Error?) -> Void) -> URLSessionDownloadTask? {
-        return getProfileImage(id: userID, endpoint: .upload, completion: completion)
+        return getProfileImage(id: userID, endpoint: .getUserImage, completion: completion)
     }
     
     // Mark: Mechanic
