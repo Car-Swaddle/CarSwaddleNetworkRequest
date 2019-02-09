@@ -51,17 +51,15 @@ public class UserService: Service {
         guard let urlRequest = serviceRequest.get(with: .sendSMSVerification) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { data, error in
             completion(error)
-//            self?.completeWithJSON(data: data, error: error, completion: completion)
         }
     }
     
     @discardableResult
-    public func verifySMS(withCode code: String, completion: @escaping (_ error: Error?) -> Void) -> URLSessionDataTask? {
+    public func verifySMS(withCode code: String, completion: @escaping (_ json: JSONObject?, _ error: Error?) -> Void) -> URLSessionDataTask? {
         let codeItem = URLQueryItem(name: "code", value: code)
         guard let urlRequest = serviceRequest.get(with: .verifySMS, queryItems: [codeItem]) else { return nil }
-        return sendWithAuthentication(urlRequest: urlRequest) { data, error in
-            completion(error)
-//            self?.completeWithJSON(data: data, error: error, completion: completion)
+        return sendWithAuthentication(urlRequest: urlRequest) { [weak self] data, error in
+            self?.completeWithJSON(data: data, error: error, completion: completion)
         }
     }
     
