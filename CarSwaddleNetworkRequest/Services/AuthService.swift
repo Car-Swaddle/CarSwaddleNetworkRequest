@@ -169,6 +169,9 @@ public class AuthService: Service {
         }
         
         if let password = password {
+            if previousValueExists {
+                bodyString += "&"
+            }
             bodyString += "password=\(password)"
             previousValueExists = true
         }
@@ -189,7 +192,6 @@ public class AuthService: Service {
             previousValueExists = true
         }
         
-//        let bodyString = "email=\(email.urlEscaped())&password=\(password)"
         return bodyString.data(using: .utf8)
     }
     
