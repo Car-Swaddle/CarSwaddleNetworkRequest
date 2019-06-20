@@ -27,8 +27,10 @@ extension NetworkRequest.Request.Endpoint {
 final public class AuthorityService: Service {
     
     @discardableResult
-    public func getAuthorities(completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
-        guard let urlRequest = serviceRequest.get(with: .authorities) else { return nil }
+    public func getAuthorities(limit: Int, offset: Int, completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
+        let limitQueryItem = URLQueryItem(name: "limit", value: String(limit))
+        let offsetQueryItem = URLQueryItem(name: "offset", value: String(limit))
+        guard let urlRequest = serviceRequest.get(with: .authorities, queryItems: [limitQueryItem, offsetQueryItem]) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { data, error in
             guard let data = data,
                 let jsonArray = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {
@@ -40,8 +42,10 @@ final public class AuthorityService: Service {
     }
     
     @discardableResult
-    public func getAuthorityRequests(completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
-        guard let urlRequest = serviceRequest.get(with: .authorityRequests) else { return nil }
+    public func getAuthorityRequests(limit: Int, offset: Int, completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
+        let limitQueryItem = URLQueryItem(name: "limit", value: String(limit))
+        let offsetQueryItem = URLQueryItem(name: "offset", value: String(limit))
+        guard let urlRequest = serviceRequest.get(with: .authorityRequests, queryItems: [limitQueryItem, offsetQueryItem]) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { data, error in
             guard let data = data,
                 let jsonArray = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {
