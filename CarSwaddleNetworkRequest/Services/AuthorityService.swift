@@ -27,10 +27,19 @@ extension NetworkRequest.Request.Endpoint {
 final public class AuthorityService: Service {
     
     @discardableResult
-    public func getAuthorities(limit: Int, offset: Int, completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
-        let limitQueryItem = URLQueryItem(name: "limit", value: String(limit))
-        let offsetQueryItem = URLQueryItem(name: "offset", value: String(limit))
-        guard let urlRequest = serviceRequest.get(with: .authorities, queryItems: [limitQueryItem, offsetQueryItem]) else { return nil }
+    public func getAuthorities(limit: Int? = nil, offset: Int? = nil, completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
+        var queryItems: [URLQueryItem] = []
+        if let limit = limit {
+            let limitQueryItem = URLQueryItem(name: "limit", value: String(limit))
+            queryItems.append(limitQueryItem)
+        }
+        
+        if let offset = offset {
+            let offsetQueryItem = URLQueryItem(name: "offset", value: String(offset))
+            queryItems.append(offsetQueryItem)
+        }
+        
+        guard let urlRequest = serviceRequest.get(with: .authorities, queryItems: queryItems) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { data, error in
             guard let data = data,
                 let jsonArray = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {
@@ -42,10 +51,26 @@ final public class AuthorityService: Service {
     }
     
     @discardableResult
-    public func getAuthorityRequests(limit: Int, offset: Int, completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
-        let limitQueryItem = URLQueryItem(name: "limit", value: String(limit))
-        let offsetQueryItem = URLQueryItem(name: "offset", value: String(limit))
-        guard let urlRequest = serviceRequest.get(with: .authorityRequests, queryItems: [limitQueryItem, offsetQueryItem]) else { return nil }
+    public func getAuthorityRequests(limit: Int? = nil, offset: Int? = nil, pending: Bool? = nil, completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
+        
+        var queryItems: [URLQueryItem] = []
+        
+        if let limit = limit {
+            let limitQueryItem = URLQueryItem(name: "limit", value: String(limit))
+            queryItems.append(limitQueryItem)
+        }
+        
+        if let offset = offset {
+            let offsetQueryItem = URLQueryItem(name: "offset", value: String(offset))
+            queryItems.append(offsetQueryItem)
+        }
+        
+        if let pending = pending {
+            let pendingQueryItem = URLQueryItem(name: "pending", value: String(pending))
+            queryItems.append(pendingQueryItem)
+        }
+        
+        guard let urlRequest = serviceRequest.get(with: .authorityRequests, queryItems: queryItems) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { data, error in
             guard let data = data,
                 let jsonArray = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {
