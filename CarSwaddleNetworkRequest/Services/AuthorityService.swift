@@ -22,6 +22,7 @@ extension NetworkRequest.Request.Endpoint {
     fileprivate static let approveAuthority = Request.Endpoint(rawValue: "/api/authorities/approve")
     fileprivate static let authorities = Request.Endpoint(rawValue: "/api/authorities")
     fileprivate static let authorityRequests = Request.Endpoint(rawValue: "/api/authorityRequests")
+    fileprivate static let currentUserAuthorities = Request.Endpoint(rawValue: "/api/authorities/user")
 }
 
 final public class AuthorityService: Service {
@@ -71,6 +72,32 @@ final public class AuthorityService: Service {
         }
         
         guard let urlRequest = serviceRequest.get(with: .authorityRequests, queryItems: queryItems) else { return nil }
+        return sendWithAuthentication(urlRequest: urlRequest) { data, error in
+            guard let data = data,
+                let jsonArray = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {
+                    completion(nil, error)
+                    return
+            }
+            completion(jsonArray, error)
+        }
+    }
+    
+    @discardableResult
+    public func getCurrentUserAuthorities(limit: Int? = nil, offset: Int? = nil, completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
+        
+        var queryItems: [URLQueryItem] = []
+        
+        if let limit = limit {
+            let limitQueryItem = URLQueryItem(name: "limit", value: String(limit))
+            queryItems.append(limitQueryItem)
+        }
+        
+        if let offset = offset {
+            let offsetQueryItem = URLQueryItem(name: "offset", value: String(offset))
+            queryItems.append(offsetQueryItem)
+        }
+        
+        guard let urlRequest = serviceRequest.get(with: .currentUserAuthorities, queryItems: queryItems) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { data, error in
             guard let data = data,
                 let jsonArray = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {
