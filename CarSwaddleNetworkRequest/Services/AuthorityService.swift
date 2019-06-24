@@ -83,21 +83,8 @@ final public class AuthorityService: Service {
     }
     
     @discardableResult
-    public func getCurrentUserAuthorities(limit: Int? = nil, offset: Int? = nil, completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
-        
-        var queryItems: [URLQueryItem] = []
-        
-        if let limit = limit {
-            let limitQueryItem = URLQueryItem(name: "limit", value: String(limit))
-            queryItems.append(limitQueryItem)
-        }
-        
-        if let offset = offset {
-            let offsetQueryItem = URLQueryItem(name: "offset", value: String(offset))
-            queryItems.append(offsetQueryItem)
-        }
-        
-        guard let urlRequest = serviceRequest.get(with: .currentUserAuthorities, queryItems: queryItems) else { return nil }
+    public func getCurrentUserAuthorities(completion: @escaping JSONArrayCompletion) -> URLSessionDataTask? {
+        guard let urlRequest = serviceRequest.get(with: .currentUserAuthorities) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { data, error in
             guard let data = data,
                 let jsonArray = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {

@@ -79,7 +79,7 @@ class AuthorityTests: CarSwaddleLoginTestCase {
     func testGetCurrentUserAuthorities() {
         let exp = expectation(description: "\(#function)\(#line)")
         
-        authorityService.getCurrentUserAuthorities(limit: 30, offset: 0) { jsonArray, error in
+        authorityService.getCurrentUserAuthorities { jsonArray, error in
             XCTAssert(jsonArray?.count != 0 && error == nil, "Should get values")
             jsonArray?.printObject()
             exp.fulfill()
