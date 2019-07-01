@@ -105,10 +105,10 @@ final public class MechanicService: Service {
         let queryItems: [URLQueryItem] = [URLQueryItem(name: "mechanicID", value: "\(mechanicID)")]
         var bodyJSON: JSONObject = [:]
         if let isAllowed = isAllowed {
-            bodyJSON["isAllowed"] = isAllowed
+            bodyJSON["isAllowed"] = isAllowed.stringValue
         }
         guard let body = (try? JSONSerialization.data(withJSONObject: bodyJSON, options: [])),
-            let urlRequest = serviceRequest.post(with: .updateMechanicCorperate, queryItems: queryItems, body: body) else { return nil }
+            let urlRequest = serviceRequest.post(with: .updateMechanicCorperate, queryItems: queryItems, body: body, contentType: .applicationJSON) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { [weak self] data, error in
             self?.completeWithJSON(data: data, error: error, completion: completion)
         }
