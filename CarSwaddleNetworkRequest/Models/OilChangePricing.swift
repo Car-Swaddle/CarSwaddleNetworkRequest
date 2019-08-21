@@ -9,17 +9,17 @@
 import Foundation
 
 public struct OilChangePricing: Codable {
-    let id: String
-    let conventional: Int
-    let blend: Int
-    let synthetic: Int
-    let highMileage: Int
-    let centsPerMile: Int
+    public let id: String
+    public let conventional: Int
+    public let blend: Int
+    public let synthetic: Int
+    public let highMileage: Int
+    public let centsPerMile: Int
 }
 
 public struct OilChangePricingUpdate: Encodable {
-    let conventional: Int
-    let blend: Int
-    let synthetic: Int
-    let highMileage: Int
+    public let conventional: Int
+    public let blend: Int
+    public let synthetic: Int
+    public let highMileage: Int
 }
