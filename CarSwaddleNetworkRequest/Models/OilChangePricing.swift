@@ -15,6 +15,7 @@ public struct OilChangePricing: Codable {
     public let synthetic: Int
     public let highMileage: Int
     public let centsPerMile: Int
+    public let mechanicID: String
 }
 
 public struct OilChangePricingUpdate: Encodable {
