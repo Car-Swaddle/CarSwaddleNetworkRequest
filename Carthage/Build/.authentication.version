@@ -1,9 +1,10 @@
 {
-  "commitish" : "c6dff227a9ee5a23e63d0402a998e67a42dcf478",
+  "commitish" : "e7f9bd9c9f0e42471942fcd01567db9bd384db25",
   "iOS" : [
     {
       "name" : "Authentication",
-      "hash" : "a0e9ae29347fe078db216b3402a71650177dabe41f6e2c44d4f40f87b312b271"
+      "hash" : "bb6f3994437d924d18d88ee8fd50a4a55b2af62b02c58eff3b0b9794d81110ed",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
     }
   ]
 }
