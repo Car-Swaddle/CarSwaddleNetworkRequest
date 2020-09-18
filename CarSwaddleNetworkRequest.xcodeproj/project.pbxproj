@@ -3,1012 +3,624 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9905FF4D230D328A00DFBCB9 /* OilChangePricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905FF4C230D328A00DFBCB9 /* OilChangePricing.swift */; };
-		992C53C72150C59B0076949C /* CarSwaddleNetworkRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992C53BD2150C59B0076949C /* CarSwaddleNetworkRequest.framework */; };
-		992C53CC2150C59B0076949C /* CarSwaddleLoginTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992C53CB2150C59B0076949C /* CarSwaddleLoginTestCase.swift */; };
-		992C53CE2150C59B0076949C /* CarSwaddleNetworkRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 992C53C02150C59B0076949C /* CarSwaddleNetworkRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		992C53D82150C5B10076949C /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992C53D72150C5B10076949C /* ServerRequest.swift */; };
-		9955BC182154E646008DAF8E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9955BC172154E646008DAF8E /* UserService.swift */; };
-		995B9F2B2154B4DB0030A7CA /* GlobalImports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B9F2A2154B4DB0030A7CA /* GlobalImports.swift */; };
-		995B9F2D2154BB180030A7CA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B9F2C2154BB180030A7CA /* AuthService.swift */; };
-		995B9F2F2154C9050030A7CA /* NetworkRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B9F2E2154C9050030A7CA /* NetworkRequestError.swift */; };
-		997714B921CA1D5C00E54F5B /* PriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997714B821CA1D5C00E54F5B /* PriceService.swift */; };
-		997714BB21CB7A5900E54F5B /* PriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997714BA21CB7A5900E54F5B /* PriceTests.swift */; };
-		997714C921CE36A400E54F5B /* StripeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997714C821CE36A400E54F5B /* StripeService.swift */; };
-		997714CB21CE39B300E54F5B /* StripeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997714CA21CE39B300E54F5B /* StripeServiceTests.swift */; };
-		997DBC45219408260080F42C /* MechanicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997DBC44219408260080F42C /* MechanicService.swift */; };
-		997DBC4721940AA50080F42C /* MechanicServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997DBC4621940AA50080F42C /* MechanicServiceTests.swift */; };
-		997DBC58219773E90080F42C /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997DBC57219773E90080F42C /* UserTests.swift */; };
-		997DBC7A219D70540080F42C /* VehicleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997DBC79219D70540080F42C /* VehicleService.swift */; };
-		997DBC7C219D77750080F42C /* VehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997DBC7B219D77750080F42C /* VehicleTests.swift */; };
-		997DBC9821A3F3DB0080F42C /* AutoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997DBC9721A3F3DB0080F42C /* AutoServiceTests.swift */; };
-		9989855922B368F800E4B25A /* AuthorityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989855822B368F700E4B25A /* AuthorityService.swift */; };
-		9989855B22B36B7500E4B25A /* AuthorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989855A22B36B7500E4B25A /* AuthorityTests.swift */; };
-		998D3AD521DC86E9003DD717 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998D3AD421DC86E9003DD717 /* ReviewService.swift */; };
-		998D3AD721DC8CDE003DD717 /* ReviewServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998D3AD621DC8CDE003DD717 /* ReviewServiceTests.swift */; };
-		99C217B3240648200005888E /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C217B0240648110005888E /* Authentication.framework */; };
-		99C217B5240648200005888E /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C2179C240648080005888E /* KeychainAccess.framework */; };
-		99C217B7240648200005888E /* NetworkRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C217A72406480D0005888E /* NetworkRequest.framework */; };
-		99C791C72150CBA4000167CB /* AutoServiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C791C62150CBA4000167CB /* AutoServiceService.swift */; };
-		99D5DA1021F6F87F00E6A511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5DA0F21F6F87F00E6A511 /* AppDelegate.swift */; };
-		99D5DA1221F6F87F00E6A511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5DA1121F6F87F00E6A511 /* ViewController.swift */; };
-		99D5DA1521F6F87F00E6A511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99D5DA1321F6F87F00E6A511 /* Main.storyboard */; };
-		99D5DA1721F6F88100E6A511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D5DA1621F6F88100E6A511 /* Assets.xcassets */; };
-		99D5DA1A21F6F88100E6A511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99D5DA1821F6F88100E6A511 /* LaunchScreen.storyboard */; };
-		99E66D2B21E0915400C6E3E1 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66D2A21E0915400C6E3E1 /* FileService.swift */; };
-		99E66D2D21E0A41D00C6E3E1 /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66D2C21E0A41D00C6E3E1 /* FileServiceTests.swift */; };
-		99E66D3021E0A73300C6E3E1 /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 99E66D2E21E0A5EB00C6E3E1 /* image.jpeg */; };
-		99E66D8C21E14DFE00C6E3E1 /* smallImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 99E66D8B21E14DFE00C6E3E1 /* smallImage.png */; };
-		99F02697217B9FB8005FEFC7 /* AvailabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F02696217B9FB8005FEFC7 /* AvailabilityService.swift */; };
-		99F02699217BA048005FEFC7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F02698217BA048005FEFC7 /* Service.swift */; };
-		99F0269B217BA1F5005FEFC7 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0269A217BA1F5005FEFC7 /* TypeAliases.swift */; };
-		99F0269D217BAA18005FEFC7 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0269C217BAA18005FEFC7 /* BoolExtension.swift */; };
-		99F0269F217BAB3B005FEFC7 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0269E217BAB3B005FEFC7 /* LoginTests.swift */; };
-		99F026A1217BD01B005FEFC7 /* AvailabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F026A0217BD01B005FEFC7 /* AvailabilityTests.swift */; };
-		99F0278021852A42005FEFC7 /* RegionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0277F21852A42005FEFC7 /* RegionService.swift */; };
-		99F0278221852BE4005FEFC7 /* RegionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0278121852BE4005FEFC7 /* RegionServiceTests.swift */; };
-		99F08C6822DBC77C00317EEA /* CouponService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F08C6722DBC77C00317EEA /* CouponService.swift */; };
-		99F08C6A22DBD76700317EEA /* CouponService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F08C6922DBD76700317EEA /* CouponService.swift */; };
-		99F696B42210E25D0021A719 /* TaxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F696B32210E25D0021A719 /* TaxService.swift */; };
-		99F696B62210E50F0021A719 /* TaxServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F696B52210E50F0021A719 /* TaxServiceTests.swift */; };
+		994224C52514A85500FF40B0 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 994224C42514A85500FF40B0 /* KeychainAccess */; };
+		994224CD2514A86000FF40B0 /* Authentication in Frameworks */ = {isa = PBXBuildFile; productRef = 994224CC2514A86000FF40B0 /* Authentication */; };
+		99B5F76C2514A9ED00DF3F12 /* NetworkRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 99B5F76B2514A9ED00DF3F12 /* NetworkRequest */; };
+		OBJ_104 /* AuthorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* AuthorityTests.swift */; };
+		OBJ_105 /* AutoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* AutoServiceTests.swift */; };
+		OBJ_106 /* AvailabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* AvailabilityTests.swift */; };
+		OBJ_107 /* CarSwaddleLoginTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* CarSwaddleLoginTestCase.swift */; };
+		OBJ_108 /* CouponService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* CouponService.swift */; };
+		OBJ_109 /* FileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* FileServiceTests.swift */; };
+		OBJ_110 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* LoginTests.swift */; };
+		OBJ_111 /* MechanicServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* MechanicServiceTests.swift */; };
+		OBJ_112 /* PriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* PriceTests.swift */; };
+		OBJ_113 /* RegionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* RegionServiceTests.swift */; };
+		OBJ_114 /* ReviewServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* ReviewServiceTests.swift */; };
+		OBJ_115 /* StripeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* StripeServiceTests.swift */; };
+		OBJ_116 /* TaxServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* TaxServiceTests.swift */; };
+		OBJ_117 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* UserTests.swift */; };
+		OBJ_118 /* VehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* VehicleTests.swift */; };
+		OBJ_120 /* CarSwaddleNetworkRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CarSwaddleNetworkRequest::CarSwaddleNetworkRequest::Product" /* CarSwaddleNetworkRequest.framework */; };
+		OBJ_66 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* BoolExtension.swift */; };
+		OBJ_67 /* GlobalImports.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* GlobalImports.swift */; };
+		OBJ_68 /* OilChangePricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* OilChangePricing.swift */; };
+		OBJ_69 /* NetworkRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* NetworkRequestError.swift */; };
+		OBJ_70 /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* ServerRequest.swift */; };
+		OBJ_71 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* AuthService.swift */; };
+		OBJ_72 /* AuthorityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* AuthorityService.swift */; };
+		OBJ_73 /* AutoServiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* AutoServiceService.swift */; };
+		OBJ_74 /* AvailabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* AvailabilityService.swift */; };
+		OBJ_75 /* CouponService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* CouponService.swift */; };
+		OBJ_76 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* FileService.swift */; };
+		OBJ_77 /* MechanicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* MechanicService.swift */; };
+		OBJ_78 /* PriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* PriceService.swift */; };
+		OBJ_79 /* RegionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* RegionService.swift */; };
+		OBJ_80 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* ReviewService.swift */; };
+		OBJ_81 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Service.swift */; };
+		OBJ_82 /* StripeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* StripeService.swift */; };
+		OBJ_83 /* TaxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* TaxService.swift */; };
+		OBJ_84 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* UserService.swift */; };
+		OBJ_85 /* VehicleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* VehicleService.swift */; };
+		OBJ_86 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* TypeAliases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		992C53C82150C59B0076949C /* PBXContainerItemProxy */ = {
+		994224C22514A7E700FF40B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 992C53B42150C59B0076949C /* Project object */;
+			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 992C53BC2150C59B0076949C;
+			remoteGlobalIDString = "CarSwaddleNetworkRequest::CarSwaddleNetworkRequest";
 			remoteInfo = CarSwaddleNetworkRequest;
-		};
-		99C2179B240648080005888E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 99C21795240648080005888E /* KeychainAccess.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 140F195C1A49D79400B0016A;
-			remoteInfo = KeychainAccess;
-		};
-		99C2179D240648080005888E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 99C21795240648080005888E /* KeychainAccess.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 140F19671A49D79500B0016A;
-			remoteInfo = KeychainAccessTests;
-		};
-		99C2179F240648080005888E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 99C21795240648080005888E /* KeychainAccess.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 14A630151D3293C700809B3F;
-			remoteInfo = TestHost;
-		};
-		99C217A62406480D0005888E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 99C217A12406480C0005888E /* NetworkRequest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 99132565214B8A8C00384890;
-			remoteInfo = NetworkRequest;
-		};
-		99C217A82406480D0005888E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 99C217A12406480C0005888E /* NetworkRequest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9913256E214B8A8C00384890;
-			remoteInfo = NetworkRequestTests;
-		};
-		99C217AF240648110005888E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 99C217AA240648110005888E /* Authentication.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 995B9F3A2154D6670030A7CA;
-			remoteInfo = Authentication;
-		};
-		99C217B1240648110005888E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 99C217AA240648110005888E /* Authentication.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 995B9F432154D6670030A7CA;
-			remoteInfo = AuthenticationTests;
-		};
-		99D5DA1F21F6F88C00E6A511 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 992C53B42150C59B0076949C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 99D5DA0C21F6F87F00E6A511;
-			remoteInfo = TestHostApp;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		99D5D9C621F5A33B00E6A511 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		9905FF4C230D328A00DFBCB9 /* OilChangePricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilChangePricing.swift; sourceTree = "<group>"; };
-		992C53BD2150C59B0076949C /* CarSwaddleNetworkRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarSwaddleNetworkRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		992C53C02150C59B0076949C /* CarSwaddleNetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarSwaddleNetworkRequest.h; sourceTree = "<group>"; };
-		992C53C12150C59B0076949C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		992C53C62150C59B0076949C /* CarSwaddleNetworkRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarSwaddleNetworkRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		992C53CB2150C59B0076949C /* CarSwaddleLoginTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSwaddleLoginTestCase.swift; sourceTree = "<group>"; };
-		992C53CD2150C59B0076949C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		992C53D72150C5B10076949C /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
-		9955BC172154E646008DAF8E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		995B9F2A2154B4DB0030A7CA /* GlobalImports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImports.swift; sourceTree = "<group>"; };
-		995B9F2C2154BB180030A7CA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		995B9F2E2154C9050030A7CA /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
-		997714B821CA1D5C00E54F5B /* PriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceService.swift; sourceTree = "<group>"; };
-		997714BA21CB7A5900E54F5B /* PriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTests.swift; sourceTree = "<group>"; };
-		997714C821CE36A400E54F5B /* StripeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeService.swift; sourceTree = "<group>"; };
-		997714CA21CE39B300E54F5B /* StripeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeServiceTests.swift; sourceTree = "<group>"; };
-		997DBC44219408260080F42C /* MechanicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicService.swift; sourceTree = "<group>"; };
-		997DBC4621940AA50080F42C /* MechanicServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicServiceTests.swift; sourceTree = "<group>"; };
-		997DBC57219773E90080F42C /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
-		997DBC79219D70540080F42C /* VehicleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleService.swift; sourceTree = "<group>"; };
-		997DBC7B219D77750080F42C /* VehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTests.swift; sourceTree = "<group>"; };
-		997DBC9721A3F3DB0080F42C /* AutoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceTests.swift; sourceTree = "<group>"; };
-		9989855822B368F700E4B25A /* AuthorityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorityService.swift; sourceTree = "<group>"; };
-		9989855A22B36B7500E4B25A /* AuthorityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorityTests.swift; sourceTree = "<group>"; };
-		998D3AD421DC86E9003DD717 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
-		998D3AD621DC8CDE003DD717 /* ReviewServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewServiceTests.swift; sourceTree = "<group>"; };
-		99C21795240648080005888E /* KeychainAccess.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeychainAccess.xcodeproj; path = Carthage/Checkouts/KeychainAccess/Lib/KeychainAccess.xcodeproj; sourceTree = "<group>"; };
-		99C217A12406480C0005888E /* NetworkRequest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkRequest.xcodeproj; path = Carthage/Checkouts/networkrequest/NetworkRequest.xcodeproj; sourceTree = "<group>"; };
-		99C217AA240648110005888E /* Authentication.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Authentication.xcodeproj; path = Carthage/Checkouts/authentication/Authentication.xcodeproj; sourceTree = "<group>"; };
-		99C791C62150CBA4000167CB /* AutoServiceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceService.swift; sourceTree = "<group>"; };
-		99D5DA0D21F6F87F00E6A511 /* TestHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		99D5DA0F21F6F87F00E6A511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99D5DA1121F6F87F00E6A511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		99D5DA1421F6F87F00E6A511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		99D5DA1621F6F88100E6A511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		99D5DA1921F6F88100E6A511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		99D5DA1B21F6F88100E6A511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99D5DA2121F6F89B00E6A511 /* TestHostApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestHostApp.entitlements; sourceTree = "<group>"; };
-		99E66D2A21E0915400C6E3E1 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
-		99E66D2C21E0A41D00C6E3E1 /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
-		99E66D2E21E0A5EB00C6E3E1 /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
-		99E66D8B21E14DFE00C6E3E1 /* smallImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallImage.png; sourceTree = "<group>"; };
-		99F02696217B9FB8005FEFC7 /* AvailabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityService.swift; sourceTree = "<group>"; };
-		99F02698217BA048005FEFC7 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		99F0269A217BA1F5005FEFC7 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
-		99F0269C217BAA18005FEFC7 /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
-		99F0269E217BAB3B005FEFC7 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
-		99F026A0217BD01B005FEFC7 /* AvailabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityTests.swift; sourceTree = "<group>"; };
-		99F0277F21852A42005FEFC7 /* RegionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionService.swift; sourceTree = "<group>"; };
-		99F0278121852BE4005FEFC7 /* RegionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionServiceTests.swift; sourceTree = "<group>"; };
-		99F08C6722DBC77C00317EEA /* CouponService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponService.swift; sourceTree = "<group>"; };
-		99F08C6922DBD76700317EEA /* CouponService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponService.swift; sourceTree = "<group>"; };
-		99F696B32210E25D0021A719 /* TaxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxService.swift; sourceTree = "<group>"; };
-		99F696B52210E50F0021A719 /* TaxServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxServiceTests.swift; sourceTree = "<group>"; };
+		"CarSwaddleNetworkRequest::CarSwaddleNetworkRequest::Product" /* CarSwaddleNetworkRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CarSwaddleNetworkRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"CarSwaddleNetworkRequest::CarSwaddleNetworkRequestTests::Product" /* CarSwaddleNetworkRequestTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarSwaddleNetworkRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_11 /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
+		OBJ_12 /* GlobalImports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImports.swift; sourceTree = "<group>"; };
+		OBJ_14 /* OilChangePricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilChangePricing.swift; sourceTree = "<group>"; };
+		OBJ_15 /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
+		OBJ_16 /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
+		OBJ_18 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		OBJ_19 /* AuthorityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorityService.swift; sourceTree = "<group>"; };
+		OBJ_20 /* AutoServiceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceService.swift; sourceTree = "<group>"; };
+		OBJ_21 /* AvailabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityService.swift; sourceTree = "<group>"; };
+		OBJ_22 /* CouponService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponService.swift; sourceTree = "<group>"; };
+		OBJ_23 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		OBJ_24 /* MechanicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicService.swift; sourceTree = "<group>"; };
+		OBJ_25 /* PriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceService.swift; sourceTree = "<group>"; };
+		OBJ_26 /* RegionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionService.swift; sourceTree = "<group>"; };
+		OBJ_27 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		OBJ_28 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		OBJ_29 /* StripeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeService.swift; sourceTree = "<group>"; };
+		OBJ_30 /* TaxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxService.swift; sourceTree = "<group>"; };
+		OBJ_31 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		OBJ_32 /* VehicleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleService.swift; sourceTree = "<group>"; };
+		OBJ_33 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		OBJ_36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_37 /* AuthorityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorityTests.swift; sourceTree = "<group>"; };
+		OBJ_38 /* AutoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceTests.swift; sourceTree = "<group>"; };
+		OBJ_39 /* AvailabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityTests.swift; sourceTree = "<group>"; };
+		OBJ_40 /* CarSwaddleLoginTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSwaddleLoginTestCase.swift; sourceTree = "<group>"; };
+		OBJ_41 /* CouponService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponService.swift; sourceTree = "<group>"; };
+		OBJ_42 /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
+		OBJ_43 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		OBJ_44 /* MechanicServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicServiceTests.swift; sourceTree = "<group>"; };
+		OBJ_45 /* PriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTests.swift; sourceTree = "<group>"; };
+		OBJ_46 /* RegionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionServiceTests.swift; sourceTree = "<group>"; };
+		OBJ_47 /* ReviewServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewServiceTests.swift; sourceTree = "<group>"; };
+		OBJ_48 /* StripeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeServiceTests.swift; sourceTree = "<group>"; };
+		OBJ_49 /* TaxServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxServiceTests.swift; sourceTree = "<group>"; };
+		OBJ_50 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		OBJ_51 /* VehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTests.swift; sourceTree = "<group>"; };
+		OBJ_55 /* HostApp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HostApp; sourceTree = SOURCE_ROOT; };
+		OBJ_57 /* TestHostApp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestHostApp; sourceTree = SOURCE_ROOT; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_9 /* CarSwaddleNetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarSwaddleNetworkRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		992C53BA2150C59B0076949C /* Frameworks */ = {
+		OBJ_119 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				99C217B7240648200005888E /* NetworkRequest.framework in Frameworks */,
-				99C217B5240648200005888E /* KeychainAccess.framework in Frameworks */,
-				99C217B3240648200005888E /* Authentication.framework in Frameworks */,
+				OBJ_120 /* CarSwaddleNetworkRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		992C53C32150C59B0076949C /* Frameworks */ = {
+		OBJ_87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				992C53C72150C59B0076949C /* CarSwaddleNetworkRequest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99D5DA0A21F6F87F00E6A511 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				994224CD2514A86000FF40B0 /* Authentication in Frameworks */,
+				99B5F76C2514A9ED00DF3F12 /* NetworkRequest in Frameworks */,
+				994224C52514A85500FF40B0 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9905FF4B230D327700DFBCB9 /* Models */ = {
+		OBJ_13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9905FF4C230D328A00DFBCB9 /* OilChangePricing.swift */,
+				OBJ_14 /* OilChangePricing.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		992C53B32150C59B0076949C = {
+		OBJ_17 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				992C53BF2150C59B0076949C /* CarSwaddleNetworkRequest */,
-				992C53CA2150C59B0076949C /* CarSwaddleNetworkRequestTests */,
-				99D5DA0E21F6F87F00E6A511 /* TestHostApp */,
-				992C53BE2150C59B0076949C /* Products */,
-				99C791BA2150C5E5000167CB /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		992C53BE2150C59B0076949C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				992C53BD2150C59B0076949C /* CarSwaddleNetworkRequest.framework */,
-				992C53C62150C59B0076949C /* CarSwaddleNetworkRequestTests.xctest */,
-				99D5DA0D21F6F87F00E6A511 /* TestHostApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		992C53BF2150C59B0076949C /* CarSwaddleNetworkRequest */ = {
-			isa = PBXGroup;
-			children = (
-				992C53C02150C59B0076949C /* CarSwaddleNetworkRequest.h */,
-				992C53D72150C5B10076949C /* ServerRequest.swift */,
-				995B9F2E2154C9050030A7CA /* NetworkRequestError.swift */,
-				99F0269A217BA1F5005FEFC7 /* TypeAliases.swift */,
-				99F0269C217BAA18005FEFC7 /* BoolExtension.swift */,
-				9905FF4B230D327700DFBCB9 /* Models */,
-				99C791C52150CB98000167CB /* Services */,
-				992C53C12150C59B0076949C /* Info.plist */,
-				995B9F2A2154B4DB0030A7CA /* GlobalImports.swift */,
-			);
-			path = CarSwaddleNetworkRequest;
-			sourceTree = "<group>";
-		};
-		992C53CA2150C59B0076949C /* CarSwaddleNetworkRequestTests */ = {
-			isa = PBXGroup;
-			children = (
-				997DBC9721A3F3DB0080F42C /* AutoServiceTests.swift */,
-				992C53CB2150C59B0076949C /* CarSwaddleLoginTestCase.swift */,
-				997714BA21CB7A5900E54F5B /* PriceTests.swift */,
-				997714CA21CE39B300E54F5B /* StripeServiceTests.swift */,
-				99F026A0217BD01B005FEFC7 /* AvailabilityTests.swift */,
-				99F0278121852BE4005FEFC7 /* RegionServiceTests.swift */,
-				998D3AD621DC8CDE003DD717 /* ReviewServiceTests.swift */,
-				997DBC7B219D77750080F42C /* VehicleTests.swift */,
-				997DBC4621940AA50080F42C /* MechanicServiceTests.swift */,
-				997DBC57219773E90080F42C /* UserTests.swift */,
-				99F0269E217BAB3B005FEFC7 /* LoginTests.swift */,
-				99E66D2C21E0A41D00C6E3E1 /* FileServiceTests.swift */,
-				99F696B52210E50F0021A719 /* TaxServiceTests.swift */,
-				9989855A22B36B7500E4B25A /* AuthorityTests.swift */,
-				99F08C6922DBD76700317EEA /* CouponService.swift */,
-				99E66D2F21E0A5F000C6E3E1 /* Resources */,
-				992C53CD2150C59B0076949C /* Info.plist */,
-			);
-			path = CarSwaddleNetworkRequestTests;
-			sourceTree = "<group>";
-		};
-		99C21796240648080005888E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				99C2179C240648080005888E /* KeychainAccess.framework */,
-				99C2179E240648080005888E /* KeychainAccessTests.xctest */,
-				99C217A0240648080005888E /* TestHost.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		99C217A22406480C0005888E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				99C217A72406480D0005888E /* NetworkRequest.framework */,
-				99C217A92406480D0005888E /* NetworkRequestTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		99C217AB240648110005888E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				99C217B0240648110005888E /* Authentication.framework */,
-				99C217B2240648110005888E /* AuthenticationTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		99C791BA2150C5E5000167CB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				99C217AA240648110005888E /* Authentication.xcodeproj */,
-				99C217A12406480C0005888E /* NetworkRequest.xcodeproj */,
-				99C21795240648080005888E /* KeychainAccess.xcodeproj */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		99C791C52150CB98000167CB /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				99F02698217BA048005FEFC7 /* Service.swift */,
-				99C791C62150CBA4000167CB /* AutoServiceService.swift */,
-				995B9F2C2154BB180030A7CA /* AuthService.swift */,
-				9955BC172154E646008DAF8E /* UserService.swift */,
-				99F02696217B9FB8005FEFC7 /* AvailabilityService.swift */,
-				99F0277F21852A42005FEFC7 /* RegionService.swift */,
-				998D3AD421DC86E9003DD717 /* ReviewService.swift */,
-				997DBC44219408260080F42C /* MechanicService.swift */,
-				997DBC79219D70540080F42C /* VehicleService.swift */,
-				997714B821CA1D5C00E54F5B /* PriceService.swift */,
-				997714C821CE36A400E54F5B /* StripeService.swift */,
-				99E66D2A21E0915400C6E3E1 /* FileService.swift */,
-				99F696B32210E25D0021A719 /* TaxService.swift */,
-				9989855822B368F700E4B25A /* AuthorityService.swift */,
-				99F08C6722DBC77C00317EEA /* CouponService.swift */,
+				OBJ_18 /* AuthService.swift */,
+				OBJ_19 /* AuthorityService.swift */,
+				OBJ_20 /* AutoServiceService.swift */,
+				OBJ_21 /* AvailabilityService.swift */,
+				OBJ_22 /* CouponService.swift */,
+				OBJ_23 /* FileService.swift */,
+				OBJ_24 /* MechanicService.swift */,
+				OBJ_25 /* PriceService.swift */,
+				OBJ_26 /* RegionService.swift */,
+				OBJ_27 /* ReviewService.swift */,
+				OBJ_28 /* Service.swift */,
+				OBJ_29 /* StripeService.swift */,
+				OBJ_30 /* TaxService.swift */,
+				OBJ_31 /* UserService.swift */,
+				OBJ_32 /* VehicleService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		99D5DA0E21F6F87F00E6A511 /* TestHostApp */ = {
+		OBJ_34 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				99D5DA2121F6F89B00E6A511 /* TestHostApp.entitlements */,
-				99D5DA0F21F6F87F00E6A511 /* AppDelegate.swift */,
-				99D5DA1121F6F87F00E6A511 /* ViewController.swift */,
-				99D5DA1321F6F87F00E6A511 /* Main.storyboard */,
-				99D5DA1621F6F88100E6A511 /* Assets.xcassets */,
-				99D5DA1821F6F88100E6A511 /* LaunchScreen.storyboard */,
-				99D5DA1B21F6F88100E6A511 /* Info.plist */,
+				OBJ_35 /* CarSwaddleNetworkRequestTests */,
 			);
-			path = TestHostApp;
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* CarSwaddleNetworkRequestTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* Info.plist */,
+				OBJ_37 /* AuthorityTests.swift */,
+				OBJ_38 /* AutoServiceTests.swift */,
+				OBJ_39 /* AvailabilityTests.swift */,
+				OBJ_40 /* CarSwaddleLoginTestCase.swift */,
+				OBJ_41 /* CouponService.swift */,
+				OBJ_42 /* FileServiceTests.swift */,
+				OBJ_43 /* LoginTests.swift */,
+				OBJ_44 /* MechanicServiceTests.swift */,
+				OBJ_45 /* PriceTests.swift */,
+				OBJ_46 /* RegionServiceTests.swift */,
+				OBJ_47 /* ReviewServiceTests.swift */,
+				OBJ_48 /* StripeServiceTests.swift */,
+				OBJ_49 /* TaxServiceTests.swift */,
+				OBJ_50 /* UserTests.swift */,
+				OBJ_51 /* VehicleTests.swift */,
+			);
+			name = CarSwaddleNetworkRequestTests;
+			path = Tests/CarSwaddleNetworkRequestTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_34 /* Tests */,
+				OBJ_52 /* Products */,
+				OBJ_55 /* HostApp */,
+				OBJ_57 /* TestHostApp */,
+				OBJ_60 /* README.md */,
+			);
 			sourceTree = "<group>";
 		};
-		99E66D2F21E0A5F000C6E3E1 /* Resources */ = {
+		OBJ_52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				99E66D8B21E14DFE00C6E3E1 /* smallImage.png */,
-				99E66D2E21E0A5EB00C6E3E1 /* image.jpeg */,
+				"CarSwaddleNetworkRequest::CarSwaddleNetworkRequest::Product" /* CarSwaddleNetworkRequest.framework */,
+				"CarSwaddleNetworkRequest::CarSwaddleNetworkRequestTests::Product" /* CarSwaddleNetworkRequestTests.xctest */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* CarSwaddleNetworkRequest */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* CarSwaddleNetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* CarSwaddleNetworkRequest.h */,
+				OBJ_10 /* Info.plist */,
+				OBJ_11 /* BoolExtension.swift */,
+				OBJ_12 /* GlobalImports.swift */,
+				OBJ_13 /* Models */,
+				OBJ_15 /* NetworkRequestError.swift */,
+				OBJ_16 /* ServerRequest.swift */,
+				OBJ_17 /* Services */,
+				OBJ_33 /* TypeAliases.swift */,
+			);
+			name = CarSwaddleNetworkRequest;
+			path = Sources/CarSwaddleNetworkRequest;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		992C53B82150C59B0076949C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				992C53CE2150C59B0076949C /* CarSwaddleNetworkRequest.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		992C53BC2150C59B0076949C /* CarSwaddleNetworkRequest */ = {
+		"CarSwaddleNetworkRequest::CarSwaddleNetworkRequest" /* CarSwaddleNetworkRequest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 992C53D12150C59B0076949C /* Build configuration list for PBXNativeTarget "CarSwaddleNetworkRequest" */;
+			buildConfigurationList = OBJ_62 /* Build configuration list for PBXNativeTarget "CarSwaddleNetworkRequest" */;
 			buildPhases = (
-				992C53B82150C59B0076949C /* Headers */,
-				992C53B92150C59B0076949C /* Sources */,
-				992C53BA2150C59B0076949C /* Frameworks */,
-				992C53BB2150C59B0076949C /* Resources */,
+				OBJ_65 /* Sources */,
+				OBJ_87 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CarSwaddleNetworkRequest;
+			packageProductDependencies = (
+				994224C42514A85500FF40B0 /* KeychainAccess */,
+				994224CC2514A86000FF40B0 /* Authentication */,
+				99B5F76B2514A9ED00DF3F12 /* NetworkRequest */,
+			);
 			productName = CarSwaddleNetworkRequest;
-			productReference = 992C53BD2150C59B0076949C /* CarSwaddleNetworkRequest.framework */;
+			productReference = "CarSwaddleNetworkRequest::CarSwaddleNetworkRequest::Product" /* CarSwaddleNetworkRequest.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		992C53C52150C59B0076949C /* CarSwaddleNetworkRequestTests */ = {
+		"CarSwaddleNetworkRequest::CarSwaddleNetworkRequestTests" /* CarSwaddleNetworkRequestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 992C53D42150C59B0076949C /* Build configuration list for PBXNativeTarget "CarSwaddleNetworkRequestTests" */;
+			buildConfigurationList = OBJ_100 /* Build configuration list for PBXNativeTarget "CarSwaddleNetworkRequestTests" */;
 			buildPhases = (
-				992C53C22150C59B0076949C /* Sources */,
-				992C53C32150C59B0076949C /* Frameworks */,
-				992C53C42150C59B0076949C /* Resources */,
-				99D5D9C621F5A33B00E6A511 /* CopyFiles */,
+				OBJ_103 /* Sources */,
+				OBJ_119 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				992C53C92150C59B0076949C /* PBXTargetDependency */,
-				99D5DA2021F6F88C00E6A511 /* PBXTargetDependency */,
+				OBJ_121 /* PBXTargetDependency */,
 			);
 			name = CarSwaddleNetworkRequestTests;
 			productName = CarSwaddleNetworkRequestTests;
-			productReference = 992C53C62150C59B0076949C /* CarSwaddleNetworkRequestTests.xctest */;
+			productReference = "CarSwaddleNetworkRequest::CarSwaddleNetworkRequestTests::Product" /* CarSwaddleNetworkRequestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		99D5DA0C21F6F87F00E6A511 /* TestHostApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99D5DA1C21F6F88100E6A511 /* Build configuration list for PBXNativeTarget "TestHostApp" */;
-			buildPhases = (
-				99D5DA0921F6F87F00E6A511 /* Sources */,
-				99D5DA0A21F6F87F00E6A511 /* Frameworks */,
-				99D5DA0B21F6F87F00E6A511 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TestHostApp;
-			productName = TestHostApp;
-			productReference = 99D5DA0D21F6F87F00E6A511 /* TestHostApp.app */;
-			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		992C53B42150C59B0076949C /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = CarSwaddle;
-				TargetAttributes = {
-					992C53BC2150C59B0076949C = {
-						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1100;
-					};
-					992C53C52150C59B0076949C = {
-						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1100;
-						TestTargetID = 99D5DA0C21F6F87F00E6A511;
-					};
-					99D5DA0C21F6F87F00E6A511 = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1100;
-						SystemCapabilities = {
-							com.apple.Keychain = {
-								enabled = 1;
-							};
-						};
-					};
-				};
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = 992C53B72150C59B0076949C /* Build configuration list for PBXProject "CarSwaddleNetworkRequest" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "CarSwaddleNetworkRequest" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 992C53B32150C59B0076949C;
-			productRefGroup = 992C53BE2150C59B0076949C /* Products */;
+			mainGroup = OBJ_5;
+			packageReferences = (
+				994224C32514A85500FF40B0 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				994224CB2514A86000FF40B0 /* XCRemoteSwiftPackageReference "Authentication" */,
+				99B5F76A2514A9ED00DF3F12 /* XCRemoteSwiftPackageReference "NetworkRequest" */,
+			);
+			productRefGroup = OBJ_52 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 99C217AB240648110005888E /* Products */;
-					ProjectRef = 99C217AA240648110005888E /* Authentication.xcodeproj */;
-				},
-				{
-					ProductGroup = 99C21796240648080005888E /* Products */;
-					ProjectRef = 99C21795240648080005888E /* KeychainAccess.xcodeproj */;
-				},
-				{
-					ProductGroup = 99C217A22406480C0005888E /* Products */;
-					ProjectRef = 99C217A12406480C0005888E /* NetworkRequest.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				992C53BC2150C59B0076949C /* CarSwaddleNetworkRequest */,
-				992C53C52150C59B0076949C /* CarSwaddleNetworkRequestTests */,
-				99D5DA0C21F6F87F00E6A511 /* TestHostApp */,
+				"CarSwaddleNetworkRequest::CarSwaddleNetworkRequest" /* CarSwaddleNetworkRequest */,
+				"CarSwaddleNetworkRequest::CarSwaddleNetworkRequestTests" /* CarSwaddleNetworkRequestTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		99C2179C240648080005888E /* KeychainAccess.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KeychainAccess.framework;
-			remoteRef = 99C2179B240648080005888E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		99C2179E240648080005888E /* KeychainAccessTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = KeychainAccessTests.xctest;
-			remoteRef = 99C2179D240648080005888E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		99C217A0240648080005888E /* TestHost.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TestHost.app;
-			remoteRef = 99C2179F240648080005888E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		99C217A72406480D0005888E /* NetworkRequest.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = NetworkRequest.framework;
-			remoteRef = 99C217A62406480D0005888E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		99C217A92406480D0005888E /* NetworkRequestTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NetworkRequestTests.xctest;
-			remoteRef = 99C217A82406480D0005888E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		99C217B0240648110005888E /* Authentication.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Authentication.framework;
-			remoteRef = 99C217AF240648110005888E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		99C217B2240648110005888E /* AuthenticationTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AuthenticationTests.xctest;
-			remoteRef = 99C217B1240648110005888E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
-/* Begin PBXResourcesBuildPhase section */
-		992C53BB2150C59B0076949C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		992C53C42150C59B0076949C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99E66D8C21E14DFE00C6E3E1 /* smallImage.png in Resources */,
-				99E66D3021E0A73300C6E3E1 /* image.jpeg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99D5DA0B21F6F87F00E6A511 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99D5DA1A21F6F88100E6A511 /* LaunchScreen.storyboard in Resources */,
-				99D5DA1721F6F88100E6A511 /* Assets.xcassets in Resources */,
-				99D5DA1521F6F87F00E6A511 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		992C53B92150C59B0076949C /* Sources */ = {
+		OBJ_103 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				99C791C72150CBA4000167CB /* AutoServiceService.swift in Sources */,
-				998D3AD521DC86E9003DD717 /* ReviewService.swift in Sources */,
-				997714B921CA1D5C00E54F5B /* PriceService.swift in Sources */,
-				997DBC7A219D70540080F42C /* VehicleService.swift in Sources */,
-				99F0278021852A42005FEFC7 /* RegionService.swift in Sources */,
-				9989855922B368F800E4B25A /* AuthorityService.swift in Sources */,
-				99F0269D217BAA18005FEFC7 /* BoolExtension.swift in Sources */,
-				99F02699217BA048005FEFC7 /* Service.swift in Sources */,
-				99F696B42210E25D0021A719 /* TaxService.swift in Sources */,
-				997714C921CE36A400E54F5B /* StripeService.swift in Sources */,
-				99E66D2B21E0915400C6E3E1 /* FileService.swift in Sources */,
-				995B9F2B2154B4DB0030A7CA /* GlobalImports.swift in Sources */,
-				997DBC45219408260080F42C /* MechanicService.swift in Sources */,
-				99F0269B217BA1F5005FEFC7 /* TypeAliases.swift in Sources */,
-				9955BC182154E646008DAF8E /* UserService.swift in Sources */,
-				99F02697217B9FB8005FEFC7 /* AvailabilityService.swift in Sources */,
-				992C53D82150C5B10076949C /* ServerRequest.swift in Sources */,
-				9905FF4D230D328A00DFBCB9 /* OilChangePricing.swift in Sources */,
-				995B9F2D2154BB180030A7CA /* AuthService.swift in Sources */,
-				995B9F2F2154C9050030A7CA /* NetworkRequestError.swift in Sources */,
-				99F08C6822DBC77C00317EEA /* CouponService.swift in Sources */,
+				OBJ_104 /* AuthorityTests.swift in Sources */,
+				OBJ_105 /* AutoServiceTests.swift in Sources */,
+				OBJ_106 /* AvailabilityTests.swift in Sources */,
+				OBJ_107 /* CarSwaddleLoginTestCase.swift in Sources */,
+				OBJ_108 /* CouponService.swift in Sources */,
+				OBJ_109 /* FileServiceTests.swift in Sources */,
+				OBJ_110 /* LoginTests.swift in Sources */,
+				OBJ_111 /* MechanicServiceTests.swift in Sources */,
+				OBJ_112 /* PriceTests.swift in Sources */,
+				OBJ_113 /* RegionServiceTests.swift in Sources */,
+				OBJ_114 /* ReviewServiceTests.swift in Sources */,
+				OBJ_115 /* StripeServiceTests.swift in Sources */,
+				OBJ_116 /* TaxServiceTests.swift in Sources */,
+				OBJ_117 /* UserTests.swift in Sources */,
+				OBJ_118 /* VehicleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		992C53C22150C59B0076949C /* Sources */ = {
+		OBJ_65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				997714CB21CE39B300E54F5B /* StripeServiceTests.swift in Sources */,
-				997DBC58219773E90080F42C /* UserTests.swift in Sources */,
-				99F696B62210E50F0021A719 /* TaxServiceTests.swift in Sources */,
-				997DBC4721940AA50080F42C /* MechanicServiceTests.swift in Sources */,
-				99F08C6A22DBD76700317EEA /* CouponService.swift in Sources */,
-				992C53CC2150C59B0076949C /* CarSwaddleLoginTestCase.swift in Sources */,
-				99F026A1217BD01B005FEFC7 /* AvailabilityTests.swift in Sources */,
-				997DBC7C219D77750080F42C /* VehicleTests.swift in Sources */,
-				9989855B22B36B7500E4B25A /* AuthorityTests.swift in Sources */,
-				99F0269F217BAB3B005FEFC7 /* LoginTests.swift in Sources */,
-				997DBC9821A3F3DB0080F42C /* AutoServiceTests.swift in Sources */,
-				99F0278221852BE4005FEFC7 /* RegionServiceTests.swift in Sources */,
-				99E66D2D21E0A41D00C6E3E1 /* FileServiceTests.swift in Sources */,
-				997714BB21CB7A5900E54F5B /* PriceTests.swift in Sources */,
-				998D3AD721DC8CDE003DD717 /* ReviewServiceTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99D5DA0921F6F87F00E6A511 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99D5DA1221F6F87F00E6A511 /* ViewController.swift in Sources */,
-				99D5DA1021F6F87F00E6A511 /* AppDelegate.swift in Sources */,
+				OBJ_66 /* BoolExtension.swift in Sources */,
+				OBJ_67 /* GlobalImports.swift in Sources */,
+				OBJ_68 /* OilChangePricing.swift in Sources */,
+				OBJ_69 /* NetworkRequestError.swift in Sources */,
+				OBJ_70 /* ServerRequest.swift in Sources */,
+				OBJ_71 /* AuthService.swift in Sources */,
+				OBJ_72 /* AuthorityService.swift in Sources */,
+				OBJ_73 /* AutoServiceService.swift in Sources */,
+				OBJ_74 /* AvailabilityService.swift in Sources */,
+				OBJ_75 /* CouponService.swift in Sources */,
+				OBJ_76 /* FileService.swift in Sources */,
+				OBJ_77 /* MechanicService.swift in Sources */,
+				OBJ_78 /* PriceService.swift in Sources */,
+				OBJ_79 /* RegionService.swift in Sources */,
+				OBJ_80 /* ReviewService.swift in Sources */,
+				OBJ_81 /* Service.swift in Sources */,
+				OBJ_82 /* StripeService.swift in Sources */,
+				OBJ_83 /* TaxService.swift in Sources */,
+				OBJ_84 /* UserService.swift in Sources */,
+				OBJ_85 /* VehicleService.swift in Sources */,
+				OBJ_86 /* TypeAliases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		992C53C92150C59B0076949C /* PBXTargetDependency */ = {
+		OBJ_121 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 992C53BC2150C59B0076949C /* CarSwaddleNetworkRequest */;
-			targetProxy = 992C53C82150C59B0076949C /* PBXContainerItemProxy */;
-		};
-		99D5DA2021F6F88C00E6A511 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 99D5DA0C21F6F87F00E6A511 /* TestHostApp */;
-			targetProxy = 99D5DA1F21F6F88C00E6A511 /* PBXContainerItemProxy */;
+			target = "CarSwaddleNetworkRequest::CarSwaddleNetworkRequest" /* CarSwaddleNetworkRequest */;
+			targetProxy = 994224C22514A7E700FF40B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		99D5DA1321F6F87F00E6A511 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99D5DA1421F6F87F00E6A511 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		99D5DA1821F6F88100E6A511 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				99D5DA1921F6F88100E6A511 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		992C53CF2150C59B0076949C /* Debug */ = {
+		OBJ_101 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CarSwaddleNetworkRequest.xcodeproj/CarSwaddleNetworkRequestTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CarSwaddleNetworkRequestTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CarSwaddleNetworkRequest.xcodeproj/CarSwaddleNetworkRequestTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = CarSwaddleNetworkRequestTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		992C53D02150C59B0076949C /* Release */ = {
+		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
-		992C53D22150C59B0076949C /* Debug */ = {
+		OBJ_63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				INFOPLIST_FILE = CarSwaddleNetworkRequest/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CarSwaddleNetworkRequest.xcodeproj/CarSwaddleNetworkRequest_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MACH_O_TYPE = mh_dylib;
-				PRODUCT_BUNDLE_IDENTIFIER = CS.CarSwaddleNetworkRequest;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CarSwaddleNetworkRequest;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = CarSwaddleNetworkRequest;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		992C53D32150C59B0076949C /* Release */ = {
+		OBJ_64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				INFOPLIST_FILE = CarSwaddleNetworkRequest/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CarSwaddleNetworkRequest.xcodeproj/CarSwaddleNetworkRequest_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MACH_O_TYPE = mh_dylib;
-				PRODUCT_BUNDLE_IDENTIFIER = CS.CarSwaddleNetworkRequest;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CarSwaddleNetworkRequest;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		992C53D52150C59B0076949C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = CarSwaddleNetworkRequestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = CS.CarSwaddleNetworkRequestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHostApp.app/TestHostApp";
-			};
-			name = Debug;
-		};
-		992C53D62150C59B0076949C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = CarSwaddleNetworkRequestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = CS.CarSwaddleNetworkRequestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHostApp.app/TestHostApp";
-			};
-			name = Release;
-		};
-		99D5DA1D21F6F88100E6A511 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TestHostApp/TestHostApp.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MG7WLQ6J4A;
-				INFOPLIST_FILE = TestHostApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = CS.TestHostApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		99D5DA1E21F6F88100E6A511 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TestHostApp/TestHostApp.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MG7WLQ6J4A;
-				INFOPLIST_FILE = TestHostApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = CS.TestHostApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_NAME = CarSwaddleNetworkRequest;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		992C53B72150C59B0076949C /* Build configuration list for PBXProject "CarSwaddleNetworkRequest" */ = {
+		OBJ_100 /* Build configuration list for PBXNativeTarget "CarSwaddleNetworkRequestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				992C53CF2150C59B0076949C /* Debug */,
-				992C53D02150C59B0076949C /* Release */,
+				OBJ_101 /* Debug */,
+				OBJ_102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		992C53D12150C59B0076949C /* Build configuration list for PBXNativeTarget "CarSwaddleNetworkRequest" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "CarSwaddleNetworkRequest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				992C53D22150C59B0076949C /* Debug */,
-				992C53D32150C59B0076949C /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		992C53D42150C59B0076949C /* Build configuration list for PBXNativeTarget "CarSwaddleNetworkRequestTests" */ = {
+		OBJ_62 /* Build configuration list for PBXNativeTarget "CarSwaddleNetworkRequest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				992C53D52150C59B0076949C /* Debug */,
-				992C53D62150C59B0076949C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		99D5DA1C21F6F88100E6A511 /* Build configuration list for PBXNativeTarget "TestHostApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99D5DA1D21F6F88100E6A511 /* Debug */,
-				99D5DA1E21F6F88100E6A511 /* Release */,
+				OBJ_63 /* Debug */,
+				OBJ_64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		994224C32514A85500FF40B0 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		994224CB2514A86000FF40B0 /* XCRemoteSwiftPackageReference "Authentication" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Car-Swaddle/Authentication.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		99B5F76A2514A9ED00DF3F12 /* XCRemoteSwiftPackageReference "NetworkRequest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Car-Swaddle/NetworkRequest.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		994224C42514A85500FF40B0 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 994224C32514A85500FF40B0 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		994224CC2514A86000FF40B0 /* Authentication */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 994224CB2514A86000FF40B0 /* XCRemoteSwiftPackageReference "Authentication" */;
+			productName = Authentication;
+		};
+		99B5F76B2514A9ED00DF3F12 /* NetworkRequest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99B5F76A2514A9ED00DF3F12 /* XCRemoteSwiftPackageReference "NetworkRequest" */;
+			productName = NetworkRequest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 992C53B42150C59B0076949C /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }

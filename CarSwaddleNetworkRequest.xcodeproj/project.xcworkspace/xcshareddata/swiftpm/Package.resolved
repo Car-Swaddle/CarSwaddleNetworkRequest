@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Authentication",
+        "repositoryURL": "https://github.com/Car-Swaddle/Authentication.git",
+        "state": {
+          "branch": "master",
+          "revision": "cc35da46d0dda307b2845fdb0f59c1e7f3c14e2c",
+          "version": null
+        }
+      },
+      {
+        "package": "KeychainAccess",
+        "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess.git",
+        "state": {
+          "branch": null,
+          "revision": "3d0ea2c0806791abcc5d7f0d9f62f1cfd4a7264d",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "NetworkRequest",
+        "repositoryURL": "https://github.com/Car-Swaddle/NetworkRequest.git",
+        "state": {
+          "branch": "master",
+          "revision": "b3407725508ac5e7b1d79da33eb8056f5ca0e098",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
