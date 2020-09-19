@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		994224C52514A85500FF40B0 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 994224C42514A85500FF40B0 /* KeychainAccess */; };
 		994224CD2514A86000FF40B0 /* Authentication in Frameworks */ = {isa = PBXBuildFile; productRef = 994224CC2514A86000FF40B0 /* Authentication */; };
 		99B5F76C2514A9ED00DF3F12 /* NetworkRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 99B5F76B2514A9ED00DF3F12 /* NetworkRequest */; };
 		OBJ_104 /* AuthorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* AuthorityTests.swift */; };
@@ -122,7 +121,6 @@
 			files = (
 				994224CD2514A86000FF40B0 /* Authentication in Frameworks */,
 				99B5F76C2514A9ED00DF3F12 /* NetworkRequest in Frameworks */,
-				994224C52514A85500FF40B0 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +252,6 @@
 			);
 			name = CarSwaddleNetworkRequest;
 			packageProductDependencies = (
-				994224C42514A85500FF40B0 /* KeychainAccess */,
 				994224CC2514A86000FF40B0 /* Authentication */,
 				99B5F76B2514A9ED00DF3F12 /* NetworkRequest */,
 			);
@@ -297,7 +294,6 @@
 			);
 			mainGroup = OBJ_5;
 			packageReferences = (
-				994224C32514A85500FF40B0 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				994224CB2514A86000FF40B0 /* XCRemoteSwiftPackageReference "Authentication" */,
 				99B5F76A2514A9ED00DF3F12 /* XCRemoteSwiftPackageReference "NetworkRequest" */,
 			);
@@ -578,14 +574,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		994224C32514A85500FF40B0 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.0;
-			};
-		};
 		994224CB2514A86000FF40B0 /* XCRemoteSwiftPackageReference "Authentication" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Car-Swaddle/Authentication.git";
@@ -605,11 +593,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		994224C42514A85500FF40B0 /* KeychainAccess */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 994224C32514A85500FF40B0 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
-			productName = KeychainAccess;
-		};
 		994224CC2514A86000FF40B0 /* Authentication */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 994224CB2514A86000FF40B0 /* XCRemoteSwiftPackageReference "Authentication" */;

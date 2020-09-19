@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/Car-Swaddle/Authentication.git",
         "state": {
           "branch": "master",
-          "revision": "cc35da46d0dda307b2845fdb0f59c1e7f3c14e2c",
+          "revision": "52a55cba6e853b0dc4621cc129aab6536082790b",
           "version": null
         }
       },
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess.git",
         "state": {
           "branch": null,
-          "revision": "3d0ea2c0806791abcc5d7f0d9f62f1cfd4a7264d",
-          "version": "4.2.0"
+          "revision": "654d52d30f3dd4592e944c3e0bccb53178c992f6",
+          "version": "4.2.1"
         }
       },
       {
@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/Car-Swaddle/NetworkRequest.git",
         "state": {
           "branch": "master",
-          "revision": "b3407725508ac5e7b1d79da33eb8056f5ca0e098",
+          "revision": "296de25f7b5f9643bdab625af72593a8e4a77b72",
           "version": null
         }
       }
