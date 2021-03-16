@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Combine
+
 
 extension NetworkRequest.Request.Endpoint {
     fileprivate static let nearestMechanic = Request.Endpoint(rawValue: "/api/nearest-mechanics")
@@ -123,10 +125,16 @@ final public class MechanicService: Service {
     
     @discardableResult
     public func getOilChangePricingForCurrentMechanic(completion: @escaping OilChangePricingResponse) -> URLSessionDataTask? {
-        guard let urlRequest = serviceRequest.get(with: .oilChangePricing) else { return nil }
-        return sendWithAuthentication(urlRequest: urlRequest) { data, error in
-            completion(data?.decode(), error)
-        }
+        guard var urlRequest = serviceRequest.get(with: .oilChangePricing) else { return nil }
+        try? urlRequest.authenticate()
+        return serviceRequest.send(urlRequest: urlRequest, completion: completion)
+    }
+    
+    @discardableResult
+    public func getOilChangePricingForCurrentMechanicPublisher<Response: Decodable>(completion: @escaping OilChangePricingResponse) -> AnyPublisher<Response, Error>? {
+        guard var urlRequest = serviceRequest.get(with: .oilChangePricing) else { return nil }
+        try? urlRequest.authenticate()
+        return serviceRequest.dataTaskPublisher(with: urlRequest)
     }
     
     @discardableResult

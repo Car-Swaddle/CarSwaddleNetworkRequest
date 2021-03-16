@@ -41,7 +41,7 @@ final public class AuthorityService: Service {
             queryItems.append(offsetQueryItem)
         }
         
-        guard let urlRequest = serviceRequest.get(with: .authorities, queryItems: queryItems) else { return nil }
+        guard var urlRequest = serviceRequest.get(with: .authorities, queryItems: queryItems) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { data, error in
             guard let data = data,
                 let jsonArray = (try? JSONSerialization.jsonObject(with: data, options: [])) as? [JSONObject] else {
