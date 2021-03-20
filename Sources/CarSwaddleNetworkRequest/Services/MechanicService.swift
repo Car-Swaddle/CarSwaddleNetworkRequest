@@ -139,7 +139,7 @@ final public class MechanicService: Service {
     
     @discardableResult
     public func updateOilChangePricingForCurrentMechanic(oilChangePricingUpdate: OilChangePricingUpdate, completion: @escaping OilChangePricingResponse) -> URLSessionDataTask? {
-        guard let urlRequest = serviceRequest.put(with: .oilChangePricing, body: oilChangePricingUpdate.encode(), contentType: .applicationJSON) else { return nil }
+        guard let urlRequest = serviceRequest.put(with: .oilChangePricing, body: oilChangePricingUpdate.jsonEncode(), contentType: .applicationJSON) else { return nil }
         return sendWithAuthentication(urlRequest: urlRequest) { data, error in
             completion(data?.decode(), error)
         }

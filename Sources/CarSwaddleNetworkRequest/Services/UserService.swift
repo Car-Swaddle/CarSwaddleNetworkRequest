@@ -63,8 +63,12 @@ public class UserService: Service {
         }
     }
     
+    public func updateCurrentUser(updateUser: UpdateUser) {
+        
+    }
+    
     @discardableResult
-    public func updateCurrentUser(firstName: String?, lastName: String?, phoneNumber: String?, token: String?, timeZone: String?, adminKey: String? = nil, completion: @escaping (_ json: JSONObject?, _ error: Error?) -> Void) -> URLSessionDataTask? {
+    public func updateCurrentUser(firstName: String?, lastName: String?, phoneNumber: String?, token: String?, timeZone: String?, referrerID: String?, adminKey: String? = nil, completion: @escaping (_ json: JSONObject?, _ error: Error?) -> Void) -> URLSessionDataTask? {
         var json: JSONObject = [:]
         if let firstName = firstName {
             json["firstName"] = firstName
@@ -84,6 +88,9 @@ public class UserService: Service {
         if let adminKey = adminKey {
             json["adminKey"] = adminKey
         }
+        if let referrerID = referrerID {
+            json["referrerID"] = referrerID
+        }
         return updateCurrentUser(json: json, completion: completion)
     }
     
@@ -94,6 +101,14 @@ public class UserService: Service {
         return sendWithAuthentication(urlRequest: urlRequest) { [weak self] data, error in
             self?.completeWithJSON(data: data, error: error, completion: completion)
         }
+    }
+    
+    @discardableResult
+    public func updateCurrentUser(updateUser: UpdateUser, completion: @escaping (_ user: User?, _ error: Error?) -> Void) -> URLSessionDataTask? {
+        guard let body = updateUser.jsonEncode() else { return nil }
+        guard var urlRequest = serviceRequest.patch(with: .updateUser, body: body, contentType: .applicationJSON) else { return nil }
+        try? urlRequest.authenticate()
+        return serviceRequest.dataTask(with: urlRequest, completion: completion)
     }
     
 }

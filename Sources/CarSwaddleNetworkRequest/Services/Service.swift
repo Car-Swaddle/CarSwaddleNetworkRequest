@@ -63,21 +63,7 @@ public class Service {
     }
     
     func complete<Response: Decodable>(data: Data?, error: Error?, completion: @escaping (_ response: Response?, _ error: Error?) -> Void) {
-        
         completion(data?.decode(), error)
-        
-//        guard let data = data else {
-//            completion(nil, error)
-//            return
-//        }
-//
-//        do {
-//            let decoder = JSONDecoder()
-//            let decoded = try decoder.decode(Response.self, from: data)
-//            completion(decoded, error)
-//        } catch {
-//            completion(nil, error)
-//        }
     }
     
     public enum App: String {
@@ -107,9 +93,28 @@ public extension Data {
 
 public extension Encodable {
     
-    func encode(encoder: JSONEncoder = JSONEncoder()) -> Data? {
+    func jsonEncode(encoder: JSONEncoder = JSONEncoder()) -> Data? {
         do {
             return try encoder.encode(self)
+        } catch {
+            print(error)
+            return nil
+        }
+    }
+    
+}
+
+
+/// Use this to let the Encodable object define how it should be encoded
+public protocol CustomEncodable: Encodable {
+    var jsonEncoder: JSONEncoder { get }
+}
+
+public extension CustomEncodable {
+    
+    func jsonEncode() -> Data? {
+        do {
+            return try jsonEncoder.encode(self)
         } catch {
             print(error)
             return nil
