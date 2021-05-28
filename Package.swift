@@ -15,8 +15,8 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(name: "NetworkRequest", url: "https://github.com/Car-Swaddle/NetworkRequest", .nextMajor("2.0.0")),
-        .package(name: "Authentication", url: "https://github.com/Car-Swaddle/Authentication", .nextMajor("2.0.0")),
+        .package(name: "NetworkRequest", url: "https://github.com/Car-Swaddle/NetworkRequest", .upToNextMajor(from: "2.0.0")),
+        .package(name: "Authentication", url: "https://github.com/Car-Swaddle/Authentication", .upToNextMajor(from: "2.0.0")),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
