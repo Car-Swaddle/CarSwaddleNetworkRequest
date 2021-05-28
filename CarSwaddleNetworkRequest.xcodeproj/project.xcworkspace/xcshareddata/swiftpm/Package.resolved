@@ -5,9 +5,9 @@
         "package": "Authentication",
         "repositoryURL": "https://github.com/Car-Swaddle/Authentication.git",
         "state": {
-          "branch": "master",
-          "revision": "52a55cba6e853b0dc4621cc129aab6536082790b",
-          "version": null
+          "branch": null,
+          "revision": "97d02cf8334ae4d3a61c717d2acd802cc5df8cdf",
+          "version": "1.2.0"
         }
       },
       {
@@ -23,9 +23,9 @@
         "package": "NetworkRequest",
         "repositoryURL": "https://github.com/Car-Swaddle/NetworkRequest.git",
         "state": {
-          "branch": "master",
-          "revision": "296de25f7b5f9643bdab625af72593a8e4a77b72",
-          "version": null
+          "branch": null,
+          "revision": "f146efcf6d0b6b877806b4cd8c04d58f53b3161b",
+          "version": "1.1.0"
         }
       }
     ]

@@ -63,10 +63,6 @@ public class UserService: Service {
         }
     }
     
-    public func updateCurrentUser(updateUser: UpdateUser) {
-        
-    }
-    
     @discardableResult
     public func updateCurrentUser(firstName: String?, lastName: String?, phoneNumber: String?, token: String?, timeZone: String?, referrerID: String?, adminKey: String? = nil, completion: @escaping (_ json: JSONObject?, _ error: Error?) -> Void) -> URLSessionDataTask? {
         var json: JSONObject = [:]

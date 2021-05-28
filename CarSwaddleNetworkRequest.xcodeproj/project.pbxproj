@@ -8,6 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		994224CD2514A86000FF40B0 /* Authentication in Frameworks */ = {isa = PBXBuildFile; productRef = 994224CC2514A86000FF40B0 /* Authentication */; };
+		998B760A2661936B00FE4C02 /* AutoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75F02661936A00FE4C02 /* AutoService.swift */; };
+		998B760B2661936B00FE4C02 /* PayStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75F12661936A00FE4C02 /* PayStructure.swift */; };
+		998B760C2661936B00FE4C02 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75F22661936A00FE4C02 /* BankAccount.swift */; };
+		998B760D2661936B00FE4C02 /* Referrer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75F32661936A00FE4C02 /* Referrer.swift */; };
+		998B760E2661936B00FE4C02 /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75F42661936A00FE4C02 /* Verification.swift */; };
+		998B760F2661936B00FE4C02 /* TemplateTimeSpan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75F52661936A00FE4C02 /* TemplateTimeSpan.swift */; };
+		998B76102661936B00FE4C02 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75F62661936A00FE4C02 /* Stats.swift */; };
+		998B76112661936B00FE4C02 /* Payout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75F72661936A00FE4C02 /* Payout.swift */; };
+		998B76122661936B00FE4C02 /* TransactionMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75F82661936A00FE4C02 /* TransactionMetadata.swift */; };
+		998B76132661936B00FE4C02 /* OilChangePricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75F92661936A00FE4C02 /* OilChangePricing.swift */; };
+		998B76142661936B00FE4C02 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75FA2661936A00FE4C02 /* Region.swift */; };
+		998B76152661936B00FE4C02 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75FB2661936A00FE4C02 /* Review.swift */; };
+		998B76162661936B00FE4C02 /* Mechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75FC2661936A00FE4C02 /* Mechanic.swift */; };
+		998B76172661936B00FE4C02 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75FD2661936A00FE4C02 /* Vehicle.swift */; };
+		998B76182661936B00FE4C02 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75FE2661936A00FE4C02 /* User.swift */; };
+		998B76192661936B00FE4C02 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B75FF2661936A00FE4C02 /* Address.swift */; };
+		998B761A2661936B00FE4C02 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B76002661936A00FE4C02 /* Transaction.swift */; };
+		998B761B2661936B00FE4C02 /* VehicleDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B76012661936A00FE4C02 /* VehicleDescription.swift */; };
+		998B761C2661936B00FE4C02 /* UpdateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B76022661936A00FE4C02 /* UpdateUser.swift */; };
+		998B761D2661936B00FE4C02 /* AutoServiceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B76032661936A00FE4C02 /* AutoServiceLocation.swift */; };
+		998B761E2661936B00FE4C02 /* TransactionReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B76042661936B00FE4C02 /* TransactionReceipt.swift */; };
+		998B761F2661936B00FE4C02 /* ServiceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B76052661936B00FE4C02 /* ServiceEntity.swift */; };
+		998B76202661936B00FE4C02 /* TaxInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B76062661936B00FE4C02 /* TaxInfo.swift */; };
+		998B76212661936B00FE4C02 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B76072661936B00FE4C02 /* Balance.swift */; };
+		998B76222661936B00FE4C02 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B76082661936B00FE4C02 /* Amount.swift */; };
+		998B76232661936B00FE4C02 /* OilChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B76092661936B00FE4C02 /* OilChange.swift */; };
+		998B7625266193C000FE4C02 /* URLRequestAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B7624266193C000FE4C02 /* URLRequestAuthentication.swift */; };
 		99B5F76C2514A9ED00DF3F12 /* NetworkRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 99B5F76B2514A9ED00DF3F12 /* NetworkRequest */; };
 		OBJ_104 /* AuthorityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* AuthorityTests.swift */; };
 		OBJ_105 /* AutoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* AutoServiceTests.swift */; };
@@ -27,9 +54,7 @@
 		OBJ_120 /* CarSwaddleNetworkRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CarSwaddleNetworkRequest::CarSwaddleNetworkRequest::Product" /* CarSwaddleNetworkRequest.framework */; };
 		OBJ_66 /* BoolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* BoolExtension.swift */; };
 		OBJ_67 /* GlobalImports.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* GlobalImports.swift */; };
-		OBJ_68 /* OilChangePricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* OilChangePricing.swift */; };
 		OBJ_69 /* NetworkRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* NetworkRequestError.swift */; };
-		OBJ_70 /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* ServerRequest.swift */; };
 		OBJ_71 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* AuthService.swift */; };
 		OBJ_72 /* AuthorityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* AuthorityService.swift */; };
 		OBJ_73 /* AutoServiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* AutoServiceService.swift */; };
@@ -59,14 +84,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		998B75F02661936A00FE4C02 /* AutoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoService.swift; sourceTree = "<group>"; };
+		998B75F12661936A00FE4C02 /* PayStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayStructure.swift; sourceTree = "<group>"; };
+		998B75F22661936A00FE4C02 /* BankAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		998B75F32661936A00FE4C02 /* Referrer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Referrer.swift; sourceTree = "<group>"; };
+		998B75F42661936A00FE4C02 /* Verification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		998B75F52661936A00FE4C02 /* TemplateTimeSpan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateTimeSpan.swift; sourceTree = "<group>"; };
+		998B75F62661936A00FE4C02 /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		998B75F72661936A00FE4C02 /* Payout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payout.swift; sourceTree = "<group>"; };
+		998B75F82661936A00FE4C02 /* TransactionMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionMetadata.swift; sourceTree = "<group>"; };
+		998B75F92661936A00FE4C02 /* OilChangePricing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilChangePricing.swift; sourceTree = "<group>"; };
+		998B75FA2661936A00FE4C02 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		998B75FB2661936A00FE4C02 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		998B75FC2661936A00FE4C02 /* Mechanic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mechanic.swift; sourceTree = "<group>"; };
+		998B75FD2661936A00FE4C02 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		998B75FE2661936A00FE4C02 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		998B75FF2661936A00FE4C02 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		998B76002661936A00FE4C02 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		998B76012661936A00FE4C02 /* VehicleDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleDescription.swift; sourceTree = "<group>"; };
+		998B76022661936A00FE4C02 /* UpdateUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUser.swift; sourceTree = "<group>"; };
+		998B76032661936A00FE4C02 /* AutoServiceLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoServiceLocation.swift; sourceTree = "<group>"; };
+		998B76042661936B00FE4C02 /* TransactionReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionReceipt.swift; sourceTree = "<group>"; };
+		998B76052661936B00FE4C02 /* ServiceEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceEntity.swift; sourceTree = "<group>"; };
+		998B76062661936B00FE4C02 /* TaxInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxInfo.swift; sourceTree = "<group>"; };
+		998B76072661936B00FE4C02 /* Balance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		998B76082661936B00FE4C02 /* Amount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		998B76092661936B00FE4C02 /* OilChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OilChange.swift; sourceTree = "<group>"; };
+		998B7624266193C000FE4C02 /* URLRequestAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestAuthentication.swift; sourceTree = "<group>"; };
 		"CarSwaddleNetworkRequest::CarSwaddleNetworkRequest::Product" /* CarSwaddleNetworkRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CarSwaddleNetworkRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CarSwaddleNetworkRequest::CarSwaddleNetworkRequestTests::Product" /* CarSwaddleNetworkRequestTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarSwaddleNetworkRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		OBJ_11 /* BoolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
 		OBJ_12 /* GlobalImports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImports.swift; sourceTree = "<group>"; };
-		OBJ_14 /* OilChangePricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OilChangePricing.swift; sourceTree = "<group>"; };
 		OBJ_15 /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
-		OBJ_16 /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
 		OBJ_18 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		OBJ_19 /* AuthorityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorityService.swift; sourceTree = "<group>"; };
 		OBJ_20 /* AutoServiceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoServiceService.swift; sourceTree = "<group>"; };
@@ -130,7 +180,32 @@
 		OBJ_13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* OilChangePricing.swift */,
+				998B75FF2661936A00FE4C02 /* Address.swift */,
+				998B76082661936B00FE4C02 /* Amount.swift */,
+				998B75F02661936A00FE4C02 /* AutoService.swift */,
+				998B76032661936A00FE4C02 /* AutoServiceLocation.swift */,
+				998B76072661936B00FE4C02 /* Balance.swift */,
+				998B75F22661936A00FE4C02 /* BankAccount.swift */,
+				998B75FC2661936A00FE4C02 /* Mechanic.swift */,
+				998B76092661936B00FE4C02 /* OilChange.swift */,
+				998B75F92661936A00FE4C02 /* OilChangePricing.swift */,
+				998B75F72661936A00FE4C02 /* Payout.swift */,
+				998B75F12661936A00FE4C02 /* PayStructure.swift */,
+				998B75F32661936A00FE4C02 /* Referrer.swift */,
+				998B75FA2661936A00FE4C02 /* Region.swift */,
+				998B75FB2661936A00FE4C02 /* Review.swift */,
+				998B76052661936B00FE4C02 /* ServiceEntity.swift */,
+				998B75F62661936A00FE4C02 /* Stats.swift */,
+				998B76062661936B00FE4C02 /* TaxInfo.swift */,
+				998B75F52661936A00FE4C02 /* TemplateTimeSpan.swift */,
+				998B76002661936A00FE4C02 /* Transaction.swift */,
+				998B75F82661936A00FE4C02 /* TransactionMetadata.swift */,
+				998B76042661936B00FE4C02 /* TransactionReceipt.swift */,
+				998B76022661936A00FE4C02 /* UpdateUser.swift */,
+				998B75FE2661936A00FE4C02 /* User.swift */,
+				998B75FD2661936A00FE4C02 /* Vehicle.swift */,
+				998B76012661936A00FE4C02 /* VehicleDescription.swift */,
+				998B75F42661936A00FE4C02 /* Verification.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,13 +297,13 @@
 		OBJ_8 /* CarSwaddleNetworkRequest */ = {
 			isa = PBXGroup;
 			children = (
+				998B7624266193C000FE4C02 /* URLRequestAuthentication.swift */,
 				OBJ_9 /* CarSwaddleNetworkRequest.h */,
 				OBJ_10 /* Info.plist */,
 				OBJ_11 /* BoolExtension.swift */,
 				OBJ_12 /* GlobalImports.swift */,
 				OBJ_13 /* Models */,
 				OBJ_15 /* NetworkRequestError.swift */,
-				OBJ_16 /* ServerRequest.swift */,
 				OBJ_17 /* Services */,
 				OBJ_33 /* TypeAliases.swift */,
 			);
@@ -335,25 +410,50 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_66 /* BoolExtension.swift in Sources */,
+				998B7625266193C000FE4C02 /* URLRequestAuthentication.swift in Sources */,
 				OBJ_67 /* GlobalImports.swift in Sources */,
-				OBJ_68 /* OilChangePricing.swift in Sources */,
+				998B76142661936B00FE4C02 /* Region.swift in Sources */,
+				998B76202661936B00FE4C02 /* TaxInfo.swift in Sources */,
 				OBJ_69 /* NetworkRequestError.swift in Sources */,
-				OBJ_70 /* ServerRequest.swift in Sources */,
 				OBJ_71 /* AuthService.swift in Sources */,
+				998B760E2661936B00FE4C02 /* Verification.swift in Sources */,
+				998B761A2661936B00FE4C02 /* Transaction.swift in Sources */,
+				998B760A2661936B00FE4C02 /* AutoService.swift in Sources */,
+				998B760D2661936B00FE4C02 /* Referrer.swift in Sources */,
 				OBJ_72 /* AuthorityService.swift in Sources */,
 				OBJ_73 /* AutoServiceService.swift in Sources */,
 				OBJ_74 /* AvailabilityService.swift in Sources */,
+				998B761C2661936B00FE4C02 /* UpdateUser.swift in Sources */,
+				998B76132661936B00FE4C02 /* OilChangePricing.swift in Sources */,
+				998B76182661936B00FE4C02 /* User.swift in Sources */,
 				OBJ_75 /* CouponService.swift in Sources */,
+				998B76212661936B00FE4C02 /* Balance.swift in Sources */,
 				OBJ_76 /* FileService.swift in Sources */,
+				998B76222661936B00FE4C02 /* Amount.swift in Sources */,
+				998B761B2661936B00FE4C02 /* VehicleDescription.swift in Sources */,
 				OBJ_77 /* MechanicService.swift in Sources */,
+				998B760B2661936B00FE4C02 /* PayStructure.swift in Sources */,
+				998B76192661936B00FE4C02 /* Address.swift in Sources */,
+				998B76162661936B00FE4C02 /* Mechanic.swift in Sources */,
+				998B761D2661936B00FE4C02 /* AutoServiceLocation.swift in Sources */,
 				OBJ_78 /* PriceService.swift in Sources */,
 				OBJ_79 /* RegionService.swift in Sources */,
 				OBJ_80 /* ReviewService.swift in Sources */,
+				998B760F2661936B00FE4C02 /* TemplateTimeSpan.swift in Sources */,
+				998B76122661936B00FE4C02 /* TransactionMetadata.swift in Sources */,
+				998B76102661936B00FE4C02 /* Stats.swift in Sources */,
+				998B76172661936B00FE4C02 /* Vehicle.swift in Sources */,
 				OBJ_81 /* Service.swift in Sources */,
 				OBJ_82 /* StripeService.swift in Sources */,
+				998B76232661936B00FE4C02 /* OilChange.swift in Sources */,
+				998B76152661936B00FE4C02 /* Review.swift in Sources */,
 				OBJ_83 /* TaxService.swift in Sources */,
+				998B761E2661936B00FE4C02 /* TransactionReceipt.swift in Sources */,
+				998B761F2661936B00FE4C02 /* ServiceEntity.swift in Sources */,
 				OBJ_84 /* UserService.swift in Sources */,
 				OBJ_85 /* VehicleService.swift in Sources */,
+				998B76112661936B00FE4C02 /* Payout.swift in Sources */,
+				998B760C2661936B00FE4C02 /* BankAccount.swift in Sources */,
 				OBJ_86 /* TypeAliases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,16 +678,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Car-Swaddle/Authentication.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		99B5F76A2514A9ED00DF3F12 /* XCRemoteSwiftPackageReference "NetworkRequest" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Car-Swaddle/NetworkRequest.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
