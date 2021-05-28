@@ -18,10 +18,12 @@ extension NetworkRequest.Request.Endpoint {
     fileprivate static let mechanics = Request.Endpoint(rawValue: "/api/mechanics")
     fileprivate static let updateMechanicCorperate = Request.Endpoint(rawValue: "/api/update-mechanic/corperate")
     fileprivate static let oilChangePricing = Request.Endpoint(rawValue: "/api/mechanic/pricing")
+    fileprivate static let mechanicsOilChangePricing = Request.Endpoint(rawValue: "/api/mechanics/pricing")
 }
 
 
 public typealias OilChangePricingResponse = (_ oilChangePricing: OilChangePricing?, _ error: Error?) -> Void
+public typealias MultipleOilChangePricingResponse = (_ oilChangePricings: [OilChangePricing]?, _ error: Error?) -> Void
 
 final public class MechanicService: Service {
     
@@ -131,7 +133,23 @@ final public class MechanicService: Service {
     }
     
     @discardableResult
-    public func getOilChangePricingForCurrentMechanicPublisher<Response: Decodable>(completion: @escaping OilChangePricingResponse) -> AnyPublisher<Response, Error>? {
+    public func getOilChangePricingForMechanic(mechanicID: String, completion: @escaping OilChangePricingResponse) -> URLSessionDataTask? {
+        let queryItems: [URLQueryItem] = [URLQueryItem(name: "mechanicId", value: mechanicID)]
+        guard var urlRequest = serviceRequest.get(with: .oilChangePricing, queryItems: queryItems) else { return nil }
+        try? urlRequest.authenticate()
+        return serviceRequest.send(urlRequest: urlRequest, completion: completion)
+    }
+    
+    @discardableResult
+    public func getOilChangePricingForMechanics(mechanicIDs: [String], completion: @escaping MultipleOilChangePricingResponse) -> URLSessionDataTask? {
+        let queryItems: [URLQueryItem] = [URLQueryItem(name: "mechanicIds", value: mechanicIDs.joined(separator: ","))]
+        guard var urlRequest = serviceRequest.get(with: .oilChangePricing, queryItems: queryItems) else { return nil }
+        try? urlRequest.authenticate()
+        return serviceRequest.send(urlRequest: urlRequest, completion: completion)
+    }
+    
+    @discardableResult
+    public func getOilChangePricingForCurrentMechanicPublisher() -> AnyPublisher<OilChangePricing, Error>? {
         guard var urlRequest = serviceRequest.get(with: .oilChangePricing) else { return nil }
         try? urlRequest.authenticate()
         return serviceRequest.dataTaskPublisher(with: urlRequest)

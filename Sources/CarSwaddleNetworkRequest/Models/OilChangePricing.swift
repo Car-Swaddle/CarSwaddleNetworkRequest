@@ -17,7 +17,7 @@ public struct OilChangePricing: Codable {
         self.synthetic = synthetic
         self.highMileage = highMileage
         self.centsPerMile = centsPerMile
-        self.mechanicID = mechanicID
+        self.mechanic = Mechanic(identifier: mechanicID)
     }
     
     public let id: String
@@ -26,7 +26,12 @@ public struct OilChangePricing: Codable {
     public let synthetic: Int
     public let highMileage: Int
     public let centsPerMile: Int
-    public let mechanicID: String
+    public let mechanic: Mechanic
+    
+    public struct Mechanic: Codable {
+        public let identifier: String
+    }
+    
 }
 
 public struct OilChangePricingUpdate: Encodable {
