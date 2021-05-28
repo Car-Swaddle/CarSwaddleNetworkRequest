@@ -679,7 +679,7 @@
 			repositoryURL = "https://github.com/Car-Swaddle/Authentication.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 		99B5F76A2514A9ED00DF3F12 /* XCRemoteSwiftPackageReference "NetworkRequest" */ = {
@@ -687,7 +687,7 @@
 			repositoryURL = "https://github.com/Car-Swaddle/NetworkRequest.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
