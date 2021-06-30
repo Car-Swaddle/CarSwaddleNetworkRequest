@@ -20,7 +20,7 @@ public struct User: Codable {
     public let isPhoneNumberVerified: Bool?
     public let timeZone: String?
     public let mechanic: Mechanic?
-    public let mechanicID: String
+    public let mechanicID: String?
     public let signUpReferrerID: String?
     public let activeReferrerID: String?
 }

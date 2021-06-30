@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Stats: Codable {
-    public let averageRating: Double
+    public let averageRating: Double?
     public let numberOfRatings: Int
     public let autoServicesProvided: Int
 //     let mechanic: Mechanic?

@@ -24,7 +24,10 @@ public class UserService: Service {
     public func getUsers(offset: Int, limit: Int, completion: @escaping (_ json: [JSONObject]?, _ error: Error?) -> Void) -> URLSessionDataTask? {
         let offsetItem = URLQueryItem(name: "offset", value: String(offset))
         let limitItem = URLQueryItem(name: "limit", value: String(limit))
-        guard let urlRequest = serviceRequest.get(with: .users, queryItems: [offsetItem, limitItem]) else { return nil }
+        guard let urlRequest = serviceRequest.get(with: .users, queryItems: [offsetItem, limitItem]) else {
+            completion(nil, NetworkRequestError.unableToCreateURLRequest)
+            return nil
+        }
         return sendWithAuthentication(urlRequest: urlRequest) { [weak self] data, error in
             self?.completeWithJSONArray(data: data, error: error, completion: completion)
         }
@@ -32,7 +35,10 @@ public class UserService: Service {
     
     @discardableResult
     public func getCurrentUser( completion: @escaping (_ json: JSONObject?, _ error: Error?) -> Void) -> URLSessionDataTask? {
-        guard let urlRequest = serviceRequest.get(with: .currentUser) else { return nil }
+        guard let urlRequest = serviceRequest.get(with: .currentUser) else {
+            completion(nil, NetworkRequestError.unableToCreateURLRequest)
+            return nil
+        }
         return sendWithAuthentication(urlRequest: urlRequest) { [weak self] data, error in
             self?.completeWithJSON(data: data, error: error, completion: completion)
         }
@@ -40,7 +46,10 @@ public class UserService: Service {
     
     @discardableResult
     public func sendEmailVerificationEmail(completion: @escaping (_ json: JSONObject?, _ error: Error?) -> Void) -> URLSessionDataTask? {
-        guard let urlRequest = serviceRequest.get(with: .sendEmailVerification) else { return nil }
+        guard let urlRequest = serviceRequest.get(with: .sendEmailVerification) else {
+            completion(nil, NetworkRequestError.unableToCreateURLRequest)
+            return nil
+        }
         return sendWithAuthentication(urlRequest: urlRequest) { [weak self] data, error in
             self?.completeWithJSON(data: data, error: error, completion: completion)
         }
@@ -48,7 +57,10 @@ public class UserService: Service {
     
     @discardableResult
     public func sendSMSVerification(completion: @escaping (_ error: Error?) -> Void) -> URLSessionDataTask? {
-        guard let urlRequest = serviceRequest.get(with: .sendSMSVerification) else { return nil }
+        guard let urlRequest = serviceRequest.get(with: .sendSMSVerification) else {
+            completion(NetworkRequestError.unableToCreateURLRequest)
+            return nil
+        }
         return sendWithAuthentication(urlRequest: urlRequest) { data, error in
             completion(error)
         }
@@ -57,7 +69,10 @@ public class UserService: Service {
     @discardableResult
     public func verifySMS(withCode code: String, completion: @escaping (_ json: JSONObject?, _ error: Error?) -> Void) -> URLSessionDataTask? {
         let codeItem = URLQueryItem(name: "code", value: code)
-        guard let urlRequest = serviceRequest.get(with: .verifySMS, queryItems: [codeItem]) else { return nil }
+        guard let urlRequest = serviceRequest.get(with: .verifySMS, queryItems: [codeItem]) else {
+            completion(nil, NetworkRequestError.unableToCreateURLRequest)
+            return nil
+        }
         return sendWithAuthentication(urlRequest: urlRequest) { [weak self] data, error in
             self?.completeWithJSON(data: data, error: error, completion: completion)
         }
@@ -93,7 +108,10 @@ public class UserService: Service {
     @discardableResult
     public func updateCurrentUser(json: JSONObject, completion: @escaping (_ json: JSONObject?, _ error: Error?) -> Void) -> URLSessionDataTask? {
         guard let body = (try? JSONSerialization.data(withJSONObject: json, options: [])) else { return nil }
-        guard let urlRequest = serviceRequest.patch(with: .updateUser, body: body, contentType: .applicationJSON) else { return nil }
+        guard let urlRequest = serviceRequest.patch(with: .updateUser, body: body, contentType: .applicationJSON) else {
+            completion(nil, NetworkRequestError.unableToCreateURLRequest)
+            return nil
+        }
         return sendWithAuthentication(urlRequest: urlRequest) { [weak self] data, error in
             self?.completeWithJSON(data: data, error: error, completion: completion)
         }
@@ -102,9 +120,13 @@ public class UserService: Service {
     @discardableResult
     public func updateCurrentUser(updateUser: UpdateUser, completion: @escaping (_ user: User?, _ error: Error?) -> Void) -> URLSessionDataTask? {
         guard let body = updateUser.jsonEncode() else { return nil }
-        guard var urlRequest = serviceRequest.patch(with: .updateUser, body: body, contentType: .applicationJSON) else { return nil }
+        guard var urlRequest = serviceRequest.patch(with: .updateUser, body: body, contentType: .applicationJSON) else {
+            completion(nil, NetworkRequestError.unableToCreateURLRequest)
+            return nil
+        }
         try? urlRequest.authenticate()
-        return serviceRequest.dataTask(with: urlRequest, completion: completion)
+        return serviceRequest.send(urlRequest: urlRequest, completion: completion)
     }
     
 }
+
