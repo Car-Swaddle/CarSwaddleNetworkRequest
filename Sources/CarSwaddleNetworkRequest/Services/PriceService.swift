@@ -11,6 +11,7 @@ import MapKit
 
 extension NetworkRequest.Request.Endpoint {
     fileprivate static let price = Request.Endpoint(rawValue: "/api/price")
+    fileprivate static let priceCode = Request.Endpoint(rawValue: "/api/price/code")
 }
 
 public enum PriceError: String, Error {
